@@ -8,8 +8,8 @@ module.exports = function(grunt) {
         options: {
           sourceMap: true,
           sourceMapFilename: 'css/style.css.map', // where file is generated and located
-          sourceMapURL: '/martadero/css/style.css.map', // the complete url and filename put in the compiled css file
-          sourceMapRootpath: '/martadero/' // adds this path onto the sourcemap filename and less file paths
+          sourceMapURL: '/martadero-mockups/HTML-CSS-JS/css/style.css.map', // the complete url and filename put in the compiled css file
+          sourceMapRootpath: '/martadero-mockups/HTML-CSS-JS/' // adds this path onto the sourcemap filename and less file paths
         },
         files: {
           'css/styles.css': 'css/styles.less'
