@@ -1,0 +1,310 @@
+/*------------------------------------*\
+* Company: Campaign Partners, Inc.
+* Project: Campaign RAMP
+* Version: 1.0
+* Copyright 2015. All Rights Reserved. No License Granted.
+\*------------------------------------*/
+/*----/ $TABLE OF CONTENTS /----*/
+/*
+ *----/ GENERAL ELEMENTS
+ *----/----/ TAGS
+ *----/----/ CLASSES
+ *----/----/ BUTTONS
+ *----/ BOOTSTRAP OVERWRITE
+ *----/----/ NAVEGATION
+ *----/ HEADER
+ *----/ BODY
+ *----/ FOOTER
+ */
+/*----/ $GENERAL ELEMENTS */
+@font-face {
+  font-family: "alte_haas_groteskregular";
+  src: url("../fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadProSemibold';
+  src: url('../fonts/MyriadProSemibold.eot');
+  src: url('../fonts/MyriadProSemibold.eot') format('embedded-opentype'), url('../fonts/MyriadProSemibold.woff2') format('woff2'), url('../fonts/MyriadProSemibold.woff') format('woff'), url('../fonts/MyriadProSemibold.ttf') format('truetype'), url('../fonts/MyriadProSemibold.svg#MyriadProSemibold') format('svg');
+}
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url('../fonts/MyriadProRegular.eot');
+  src: url('../fonts/MyriadProRegular.eot') format('embedded-opentype'), url('../fonts/MyriadProRegular.woff2') format('woff2'), url('../fonts/MyriadProRegular.woff') format('woff'), url('../fonts/MyriadProRegular.ttf') format('truetype'), url('../fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
+}
+@font-face {
+  font-family: 'HelveticaBd';
+  src: url('../fonts/HelveticaBd.eot');
+  src: url('../fonts/HelveticaBd.eot') format('embedded-opentype'), url('../fonts/HelveticaBd.woff2') format('woff2'), url('../fonts/HelveticaBd.woff') format('woff'), url('../fonts/HelveticaBd.ttf') format('truetype'), url('../fonts/HelveticaBd.svg#HelveticaBd') format('svg');
+}
+/*----/----/ $TAGS */
+a {
+  color: #FF9A00;
+}
+a:hover {
+  color: #FF9A00;
+  text-decoration: none;
+}
+h1 a,
+h1 a:hover,
+h2 a,
+h2 a:hover,
+h3 a,
+h3 a:hover,
+h4 a,
+h4 a:hover,
+h5 a,
+h5 a:hover,
+h6 a,
+h6 a:hover {
+  color: #222;
+}
+p a {
+  text-decoration: underline;
+}
+p a:hover {
+  text-decoration: underline;
+}
+body {
+  font-family: "MyriadProRegular";
+  font-size: 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "HelveticaBd";
+  color: #222;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+p {
+  text-align: justify;
+}
+blockquote {
+  padding: 0;
+  border: none;
+  font-size: 25px;
+  margin: 30px 0;
+}
+blockquote:before,
+blockquote:after {
+  content: '"';
+  font-size: 45px;
+  line-height: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+/*----/----/ $BUTTONS */
+.btn {
+  border: 1px solid #000;
+  border-radius: 0;
+  color: #000;
+  padding: 5px 7px;
+}
+.btn.white {
+  border-color: #fff ;
+}
+.btn-md {
+  padding: 10px 15px;
+}
+/*----/----/ $BOOTSTRAP OVERWRITE */
+/*----/----/----/ $NAVEGATION */
+.nav > li > a,
+.nav .open > a {
+  background: none;
+  font-size: 11px;
+  font-family: "HelveticaBd";
+  letter-spacing: 1px;
+}
+.nav > li > a:hover,
+.nav .open > a:hover,
+.nav > li > a:focus,
+.nav .open > a:focus {
+  background: none;
+}
+/*----/----/----/ $FORMS */
+.form-control {
+  border: 1px solid #222;
+  border-radius: 0;
+}
+/*----/----/----/ $JAVASCRIPT-COMPONENTS */
+.panel-group .panel {
+  border-radius: 0;
+  border: 1px solid #222;
+}
+.panel-default > .panel-heading {
+  background-color: transparent;
+  border-color: transparent;
+}
+.panel-group .panel-heading + .panel-collapse > .list-group,
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+  border-top: 1px solid #222;
+}
+.panel-group a {
+  text-decoration: none;
+}
+.panel-group a:hover {
+  color: #222;
+}
+/*----/ $HEADER */
+body > header {
+  box-shadow: 0px 0px 3px 0px #333;
+  position: relative;
+  z-index: 10;
+}
+body > header .navbar-header h1 {
+  margin-top: 0;
+}
+body > header .navbar-header .navbar-brand {
+  height: auto;
+  padding: 3px 10px;
+}
+body > header .navbar-nav > li > a {
+  color: #000;
+  padding-top: 14px;
+  text-transform: uppercase;
+}
+/*----/ $BODY */
+body > .content {
+  padding-left: 70px;
+}
+body > .content > .nav-left {
+  background: #222222;
+  left: 0px;
+  width: 55px;
+  height: 100%;
+  position: absolute;
+}
+body > .content > .nav-left a {
+  color: #fff;
+  display: block;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+/*----/----/ $HOME */
+.home main .events-container .btn-filter {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "HelveticaBd";
+  line-height: 0;
+}
+.home main .events-container h3 {
+  font-size: 24px;
+}
+.home main .events-container .events *[class*="col"] {
+  overflow: hidden;
+  position: relative;
+}
+.home main .events-container .events *[class*="col"] img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.home main .events-container .events .event {
+  transition: all 0.2s ease 0.2s;
+  background: rgba(23, 23, 23, 0.6);
+}
+.home main .events-container .events .event:hover {
+  background: none;
+}
+.home main .events-container .events > *[class*="col"] {
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  height: 500px;
+}
+.home main .events-container .events > *[class*="col"]:nth-child(2n) {
+  border-right: none;
+}
+.home main .events-container .events > *[class*="col"] .category {
+  background: #fff;
+  display: inline-block;
+  font-family: "HelveticaBd";
+  font-size: 14px;
+  line-height: 0;
+  padding: 15px 10px;
+  text-transform: uppercase;
+}
+.home main .events-container .events > *[class*="col"] .category.visuales {
+  background: #F682DA;
+}
+.home main .events-container .events > *[class*="col"] .category.escenicas {
+  background: #95B2D2;
+}
+.home main .events-container .events > *[class*="col"] .events-summary {
+  bottom: 0;
+  position: absolute;
+  padding-bottom: 10px;
+}
+.home main .events-container .events > *[class*="col"] .events-summary a,
+.home main .events-container .events > *[class*="col"] .events-summary p {
+  color: #fff;
+}
+.home main .events-container .events > *[class*="col"] .events-summary .btn {
+  font-family: "HelveticaBd";
+  font-size: 15px;
+  text-transform: lowercase;
+}
+.home main .events-container .events > *[class="col-md-6"] .event {
+  height: 250px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.home main .events-container .events > *[class="col-md-6"] .event:nth-child(2n) {
+  border-right: none;
+}
+.home main .events-container .more-events {
+  margin: 20px 0px;
+  font-family: "HelveticaBd";
+  font-size: 15px;
+  text-transform: uppercase;
+}
+/*----/----/ $POST */
+.post .post-container > .col-md-1 {
+  width: 50px;
+  padding-top: 20px;
+  font-size: 30px;
+  padding-right: 0;
+}
+.post .post-container .tags-social a {
+  color: #222;
+}
+.post .post-container .tags-social .tags li {
+  padding: 0px 10px;
+  border-right: 1px solid #222;
+  line-height: 1;
+  font-family: "HelveticaBd";
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.post .post-container .tags-social .tags li:last-child {
+  border: none;
+}
+.post .post-container .tags-social .social a {
+  font-size: 25px ;
+}
+.post .last-events li {
+  list-style: none;
+}
+.post .last-events li figure {
+  height: 150px;
+  overflow: hidden;
+}
+.post .last-events li figure img {
+  width: 100%;
+}
+.post .last-events h3 {
+  font-size: 16px;
+}
+/*----/ $FOOTER */
+/*# sourceMappingURL=/martadero-mockups/html-css-js/css/style.css.map */
