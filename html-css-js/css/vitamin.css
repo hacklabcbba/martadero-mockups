@@ -34,66 +34,6 @@
 
 
 /*----* $GENERAL ELEMENTS */
-/*@font-face {*/
-    /*font-family: 'open_sansregular';*/
-    /*src: url('../fonts/opensans-regular-webfont.eot');*/
-    /*src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),*/
-    /*url('../fonts/opensans-regular-webfont.woff') format('woff'),*/
-    /*url('../fonts/opensans-regular-webfont.ttf') format('truetype');*/
-/*}*/
-
-/*@font-face {*/
-    /*font-family: 'open_sansregular';*/
-    /*src: url('/assets/fonts/opensans-regular-webfont.eot');*/
-    /*src: url('/assets/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),*/
-    /*url('/assets/fonts/opensans-regular-webfont.woff') format('woff'),*/
-    /*url('/assets/fonts/opensans-regular-webfont.ttf') format('truetype');*/
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-
-/*}*/
-
-/*@font-face {*/
-    /*font-family: 'oswaldbold';*/
-    /*src: url('/assets/fonts/oswald-bold-webfont.eot');*/
-    /*src: url('/assets/fonts/oswald-bold-webfont.eot?#iefix') format('embedded-opentype'),*/
-    /*url('/assets/fonts/oswald-bold-webfont.woff') format('woff'),*/
-    /*url('/assets/fonts/oswald-bold-webfont.ttf') format('truetype');*/
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-
-/*}*/
-
-/*@font-face {*/
-    /*font-family: 'oswaldlight';*/
-    /*src: url('/assets/fonts/oswald-light-webfont.eot');*/
-    /*src: url('/assets/fonts/oswald-light-webfont.eot?#iefix') format('embedded-opentype'),*/
-    /*url('/assets/fonts/oswald-light-webfont.woff') format('woff'),*/
-    /*url('/assets/fonts/oswald-light-webfont.ttf') format('truetype');*/
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-    /*font-family: 'robotolight';*/
-    /*src: url('/assets/fonts/Roboto-Light-webfont.eot');*/
-    /*src: url('/assets/fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),*/
-    /*url('/assets/fonts/Roboto-Light-webfont.woff') format('woff'),*/
-    /*url('/assets/fonts/Roboto-Light-webfont.ttf') format('truetype');*/
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-/*}*/
-
-/*@font-face {*/
-    /*font-family: 'robotobold';*/
-    /*src: url('/assets/fonts/Roboto-Bold-webfont.eot');*/
-    /*src: url('/assets/fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),*/
-    /*url('/assets/fonts/Roboto-Bold-webfont.woff') format('woff'),*/
-    /*url('/assets/fonts/Roboto-Bold-webfont.ttf') format('truetype');*/
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-/*}*/
-
 
 /*----*----* $TAGS */
 
@@ -298,6 +238,13 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 60px;
 }
 
+.margin-top-xs {
+    margin-top: 15px;
+}
+.margin-bottom-xs {
+    margin-bottom: 15px;
+}
+
 .no-margin {
     margin: 0;
 }
@@ -342,9 +289,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 60px;
 }
 
-.margin-bottom-xs {
-    margin-bottom: 15px;
-}
 
 .margin-bottom-sm {
     margin-bottom: 30px;
@@ -354,84 +298,377 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 60px;
 }
 
-.margin-top-xs {
-    margin-top: 15px;
+
+@media (max-width:767px ) {
+    .margin-top-xs-xs {
+        margin-top: 15px;
+    }
+
+    .margin-top-xs-sm {
+        margin-top: 30px;
+    }
+
+    .margin-top-xs-md {
+        margin-top: 60px;
+    }
+
+    .margin-bottom-xs-xs {
+        margin-bottom: 15px;
+    }
+
+    .margin-bottom-xs-sm {
+        margin-bottom: 30px;
+    }
+
+    .margin-bottom-xs-md {
+        margin-bottom: 60px;
+    }
+
+    .margin-left-xs-xs {
+        margin-left: 15px;
+    }
+
+    .margin-left-xs-sm {
+        margin-left: 30px;
+    }
+
+    .margin-left-xs-md {
+        margin-left: 60px;
+    }
+
+    .margin-right-xs-xs {
+        margin-right: 15px;
+    }
+
+    .margin-right-xs-sm {
+        margin-right: 30px;
+    }
+
+    .margin-right-xs-md {
+        margin-right: 60px;
+    }
+    .no-margin-xs {
+        margin: 0;
+    }
+    .no-margin-top-xs {
+        margin-top: 0;
+    }
+
+    .no-margin-right-xs {
+        margin-right: 0;
+    }
+
+    .no-margin-bottom-xs {
+        margin-bottom: 0;
+    }
+
+    .no-margin-left-xs {
+        margin-left: 0;
+    }
+
+
+
 }
 
-.margin-top-sm {
-    margin-top: 30px;
+@media (min-width:768px) and (max-width: 991px) {
+    .margin-top-sm {
+        margin-top: 30px;
+    }
 }
 
-.margin-top-md {
-    margin-top: 60px;
+@media (min-width: 992px) and (max-width: 1199px) {
+    .margin-top-md {
+        margin-top: 60px;
+    }
 }
 
-.no-margin-xs {
-    margin: 0;
+
+.width-5 {
+    width: 5%;
 }
 
-.no-margin-top-xs {
-    margin-top: 0;
+.width-10 {
+    width: 10%;
 }
 
-.no-margin-right-xs {
-    margin-right: 0;
+.width-15 {
+    width: 15%;
 }
 
-.no-margin-bottom-xs {
-    margin-bottom: 0;
+.width-20 {
+    width: 20%;
 }
 
-.no-margin-left-xs {
-    margin-left: 0;
+.width-25 {
+    width: 25%;
 }
 
-.margin-left-xs-xs {
-    margin-left: 15px;
+.width-30 {
+    width: 30%;
 }
 
-.margin-left-xs-sm {
-    margin-left: 30px;
+.width-35 {
+    width: 35%;
 }
 
-.margin-left-xs-md {
-    margin-left: 60px;
+.width-40 {
+    width: 40%;
 }
 
-.margin-right-xs-xs {
-    margin-right: 15px;
+.width-45 {
+    width: 45%;
 }
 
-.margin-right-xs-sm {
-    margin-right: 30px;
+.width-50 {
+    width: 50%;
 }
 
-.margin-right-xs-md {
-    margin-right: 60px;
+.width-55 {
+    width: 55%;
 }
 
-.margin-bottom-xs-xs {
-    margin-bottom: 15px;
+.width-60 {
+    width: 60%;
 }
 
-.margin-bottom-xs-sm {
-    margin-bottom: 30px;
+.width-65 {
+    width: 65%;
 }
 
-.margin-bottom-xs-md {
-    margin-bottom: 60px;
+.width-70 {
+    width: 70%;
 }
 
-.margin-top-xs-xs {
-    margin-top: 15px;
+.width-75 {
+    width: 75%;
 }
 
-.margin-top-xs-sm {
-    margin-top: 30px;
+.width-80 {
+    width: 80%;
 }
 
-.margin-top-xs-md {
-    margin-top: 60px;
+.width-85 {
+    width: 85%;
+}
+
+.width-90 {
+    width: 90%;
+}
+
+.width-95 {
+    width: 95%;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+
+@media (max-width: 767px) {
+    .width-10-xs {
+        width: 10%;
+    }
+
+    .width-20-xs {
+        width: 20%;
+    }
+
+    .width-30-xs {
+        width: 30%;
+    }
+
+    .width-40-xs {
+        width: 40%;
+    }
+
+    .width-50-xs {
+        width: 50%;
+    }
+
+    .width-60-xs {
+        width: 60%;
+    }
+
+    .width-70-xs {
+        width: 70%;
+    }
+
+    .width-80-xs {
+        width: 80%;
+    }
+
+    .width-90-xs {
+        width: 90%;
+    }
+
+    .width-100-xs {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .width-10-sm {
+        width: 10%;
+    }
+
+    .width-20-sm {
+        width: 20%;
+    }
+
+    .width-30-sm {
+        width: 30%;
+    }
+
+    .width-40-sm {
+        width: 40%;
+    }
+
+    .width-50-sm {
+        width: 50%;
+    }
+
+    .width-60-sm {
+        width: 60%;
+    }
+
+    .width-70-sm {
+        width: 70%;
+    }
+
+    .width-80-sm {
+        width: 80%;
+    }
+
+    .width-90-sm {
+        width: 90%;
+    }
+
+    .width-100-sm {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .width-5-md {
+        width: 5%;
+    }
+
+    .width-10-md {
+        width: 10%;
+    }
+
+    .width-15-md {
+        width: 15%;
+    }
+
+    .width-20-md {
+        width: 20%;
+    }
+
+    .width-25-md {
+        width: 25%;
+    }
+
+    .width-30-md {
+        width: 30%;
+    }
+
+    .width-35-md {
+        width: 35%;
+    }
+
+    .width-40-md {
+        width: 40%;
+    }
+
+    .width-45-md {
+        width: 45%;
+    }
+
+    .width-50-md {
+        width: 50%;
+    }
+
+    .width-55-md {
+        width: 55%;
+    }
+
+    .width-60-md {
+        width: 60%;
+    }
+
+    .width-65-md {
+        width: 65%;
+    }
+
+    .width-70-md {
+        width: 70%;
+    }
+
+    .width-75-md {
+        width: 75%;
+    }
+
+    .width-80-md {
+        width: 80%;
+    }
+
+    .width-85-md {
+        width: 85%;
+    }
+
+    .width-90-md {
+        width: 90%;
+    }
+
+    .width-95-md {
+        width: 95%;
+    }
+
+    .width-100-md {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .width-10-lg {
+        width: 10%;
+    }
+
+    .width-20-lg {
+        width: 20%;
+    }
+
+    .width-30-lg {
+        width: 30%;
+    }
+
+    .width-40-lg {
+        width: 40%;
+    }
+
+    .width-50-lg {
+        width: 50%;
+    }
+
+    .width-60-lg {
+        width: 60%;
+    }
+
+    .width-70-lg {
+        width: 70%;
+    }
+
+    .width-80-lg {
+        width: 80%;
+    }
+
+    .width-90-lg {
+        width: 90%;
+    }
+
+    .width-100-lg {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -712,19 +949,22 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.center-block-xs {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+@media (max-width: 767px) {
+    .center-block-xs {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
-@media (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 991px) {
     .center-block-sm {
         display: block;
         margin-right: auto;
         margin-left: auto;
     }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px){
     .center-block-md {
         display: block;
         margin-right: auto;
@@ -732,36 +972,45 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 @media (min-width: 1200px) {
-
+    .center-block-lg {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 /*
 *----*----*----* $TEXT
 */
-.text-left-xs {
-    text-align: left;
+
+
+@media (max-width: 767px) {
+    .text-left-xs {
+        text-align: left;
+    }
+    .text-right-xs {
+        text-align: right;
+    }
+    .text-center-xs {
+        text-align: center;
+    }
+    .text-justify-xs {
+        text-align: justify;
+    }
+    .text-nowrap-xs {
+        white-space: nowrap;
+    }
+    .text-lowercase-xs {
+        text-transform: lowercase;
+    }
+    .text-uppercase-xs {
+        text-transform: uppercase;
+    }
+    .text-capitalize-xs {
+        text-transform: capitalize;
+    }
 }
-.text-right-xs {
-    text-align: right;
-}
-.text-center-xs {
-    text-align: center;
-}
-.text-justify-xs {
-    text-align: justify;
-}
-.text-nowrap-xs {
-    white-space: nowrap;
-}
-.text-lowercase-xs {
-    text-transform: lowercase;
-}
-.text-uppercase-xs {
-    text-transform: uppercase;
-}
-.text-capitalize-xs {
-    text-transform: capitalize;
-}
-@media (min-width: 768px) {
+
+@media (min-width: 768px) and (max-width: 991px) {
     .text-left-sm {
         text-align: left;
     }
@@ -788,7 +1037,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     .text-left-md {
         text-align: left;
     }

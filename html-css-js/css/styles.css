@@ -98,6 +98,15 @@ blockquote:after {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
 }
+input.control {
+  border-width: 1px;
+  padding: 5px;
+  color: #333;
+}
+input.white {
+  border-color: #fff;
+  background: transparent;
+}
 /*----/----/ $BUTTONS */
 .btn {
   border: 1px solid #000;
@@ -107,6 +116,7 @@ blockquote:after {
 }
 .btn.white {
   border-color: #fff ;
+  color: #fff;
 }
 .btn-md {
   padding: 10px 15px;
@@ -156,6 +166,48 @@ body > header {
   position: relative;
   z-index: 10;
 }
+body > header .navbar-black {
+  background: #000000;
+  border-bottom: 1px solid #fff;
+}
+body > header .navbar-black a {
+  color: #6f6f6f;
+}
+body > header .navbar-black li a {
+  text-transform: uppercase;
+}
+body > header .navbar-black .navbar-brand img {
+  height: 35px;
+  margin-top: 5px;
+}
+body > header .navbar-black .search .search-box {
+  height: 30px;
+  margin-top: 10px;
+}
+body > header .navbar-black .search i {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  font-size: 20px;
+}
+body > header .navbar-black .form-control {
+  border-color: #6f6f6f;
+  color: #6f6f6f;
+  background: #000;
+}
+body > header .navbar-black .socialmedia {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+body > header .navbar-black .socialmedia a {
+  border: 2px solid #6F6F6F;
+  border-radius: 100%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 2;
+}
 body > header .navbar-header h1 {
   margin-top: 0;
 }
@@ -163,40 +215,92 @@ body > header .navbar-header .navbar-brand {
   height: auto;
   padding: 3px 10px;
 }
-body > header .navbar-nav > li > a {
-  color: #000;
-  padding-top: 14px;
+body > header .navbar-second {
+  border-bottom: 1px solid #fff;
   text-transform: uppercase;
 }
-/*----/ $BODY */
-body > .content {
-  padding-left: 70px;
+body > header .navbar-second li a {
+  padding-top: 14px;
 }
-body > .content > .nav-left {
-  background: #222222;
-  left: 0px;
-  width: 55px;
-  height: 100%;
-  position: absolute;
+body > header .navbar-second a {
+  color: #000;
 }
-body > .content > .nav-left a {
+body > header .navbar-second h1 {
+  padding-top: 20px;
+}
+body > header .navbar-second .submenu-black li a {
+  font-size: 13px;
+  padding: 5px 15px;
+}
+body > header .navbar-second .navbar-nav {
+  padding-top: 25px;
+}
+body > header .navbar-second .login {
+  background: #000;
   color: #fff;
-  display: block;
-  height: 50px;
-  font-size: 20px;
-  text-align: center;
-  padding: 10px;
+  font-family: "HelveticaBd";
+  font-size: 13px;
+  line-height: 1;
+  margin-left: 30px;
+  padding: 5px;
+  text-transform: uppercase;
+  width: 125px;
+}
+body > header .navbar-second .login .title-login {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+body > header .navbar-second .login .login-options .new-register {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+body > header .navbar-second .login a {
+  color: #fff;
+}
+/*----/ $BODY */
+body .submenu-black {
+  background: #000;
+  border-radius: 0;
+}
+body .submenu-black li a {
+  color: #fff;
 }
 /*----/----/ $HOME */
-.home main .events-container .btn-filter {
+.home main .events-container .menu-categories {
+  position: relative;
+}
+.home main .events-container .menu-categories .btn-filter {
+  background: #000 none repeat scroll 0% 0%;
   position: absolute;
-  right: 10px;
-  top: 10px;
-  z-index: 100;
-  color: #fff;
+  padding: 15px 10.5px;
+  right: -15px;
+  top: 0px;
+  color: #FFF;
   text-transform: uppercase;
   font-family: "HelveticaBd";
   line-height: 0;
+  z-index: 100;
+  font-size: 12px;
+}
+.home main .events-container .menu-categories .dropdown-menu {
+  top: 42px;
+  left: auto;
+  right: -15px;
+  width: 125px;
+  min-width: 0;
+}
+.home main .events-container .menu-categories .dropdown-menu li {
+  padding: 5px 10px;
+}
+.home main .events-container .menu-categories .dropdown-menu li a {
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.home main .events-container .menu-categories .dropdown-menu li a:hover,
+.home main .events-container .menu-categories .dropdown-menu li a:focus {
+  background: none;
 }
 .home main .events-container h3 {
   font-size: 24px;
@@ -214,19 +318,40 @@ body > .content > .nav-left a {
 .home main .events-container .events .event {
   transition: all 0.2s ease 0.2s;
   background: rgba(23, 23, 23, 0.6);
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  height: 275px;
 }
 .home main .events-container .events .event:hover {
   background: none;
 }
-.home main .events-container .events > *[class*="col"] {
-  border-bottom: 1px solid #fff;
-  border-right: 1px solid #fff;
-  height: 500px;
-}
-.home main .events-container .events > *[class*="col"]:nth-child(2n) {
+.home main .events-container .events .event:nth-child(2n) {
   border-right: none;
 }
-.home main .events-container .events > *[class*="col"] .category {
+.home main .events-container .events .event.feature {
+  height: 550px;
+}
+.home main .events-container .events .event.feature .tag-feature {
+  position: absolute;
+  right: 15px;
+  top: 45px;
+  border: 3px solid #fff;
+  font-family: "HelveticaBd";
+}
+.home main .events-container .events .event.feature .tag-feature > div.tag-feature-title {
+  background: #fff;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.home main .events-container .events .event.feature .tag-feature > div.tag-feature-body {
+  font-size: 80px;
+  text-align: center;
+  color: #fff;
+  line-height: 0.9;
+  padding-bottom: 15px;
+}
+.home main .events-container .events *[class*="col"] .category {
   background: #fff;
   display: inline-block;
   font-family: "HelveticaBd";
@@ -235,33 +360,41 @@ body > .content > .nav-left a {
   padding: 15px 10px;
   text-transform: uppercase;
 }
-.home main .events-container .events > *[class*="col"] .category.visuales {
-  background: #F682DA;
+.home main .events-container .events *[class*="col"] .category.letrasyliteratura {
+  background: #c4cfb5;
 }
-.home main .events-container .events > *[class*="col"] .category.escenicas {
+.home main .events-container .events *[class*="col"] .category.interaccionsocial {
+  background: #ff7200;
+}
+.home main .events-container .events *[class*="col"] .category.audiovisual {
+  background: #836981;
+}
+.home main .events-container .events *[class*="col"] .category.musica {
+  background: #efdeb4;
+}
+.home main .events-container .events *[class*="col"] .category.artesvisuales {
+  background: #e89cdb;
+}
+.home main .events-container .events *[class*="col"] .category.artesescenicas {
   background: #95B2D2;
 }
-.home main .events-container .events > *[class*="col"] .events-summary {
+.home main .events-container .events *[class*="col"] .category.arquitectura {
+  background: #f3bc3a;
+}
+.home main .events-container .events *[class*="col"] .events-summary {
   bottom: 0;
   position: absolute;
   padding-bottom: 10px;
+  width: 95%;
 }
-.home main .events-container .events > *[class*="col"] .events-summary a,
-.home main .events-container .events > *[class*="col"] .events-summary p {
+.home main .events-container .events *[class*="col"] .events-summary a,
+.home main .events-container .events *[class*="col"] .events-summary p {
   color: #fff;
 }
-.home main .events-container .events > *[class*="col"] .events-summary .btn {
+.home main .events-container .events *[class*="col"] .events-summary .btn {
   font-family: "HelveticaBd";
   font-size: 15px;
   text-transform: lowercase;
-}
-.home main .events-container .events > *[class="col-md-6"] .event {
-  height: 250px;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-}
-.home main .events-container .events > *[class="col-md-6"] .event:nth-child(2n) {
-  border-right: none;
 }
 .home main .events-container .more-events {
   margin: 20px 0px;
@@ -269,42 +402,80 @@ body > .content > .nav-left a {
   font-size: 15px;
   text-transform: uppercase;
 }
-/*----/----/ $POST */
-.post .post-container > .col-md-1 {
-  width: 50px;
-  padding-top: 20px;
-  font-size: 30px;
-  padding-right: 0;
+/*----/----/ $EVENT */
+.event .event-details {
+  font-size: 14px;
 }
-.post .post-container .tags-social a {
-  color: #222;
-}
-.post .post-container .tags-social .tags li {
-  padding: 0px 10px;
-  border-right: 1px solid #222;
-  line-height: 1;
-  font-family: "HelveticaBd";
-  text-transform: uppercase;
-  font-size: 12px;
-}
-.post .post-container .tags-social .tags li:last-child {
-  border: none;
-}
-.post .post-container .tags-social .social a {
-  font-size: 25px ;
-}
-.post .last-events li {
-  list-style: none;
-}
-.post .last-events li figure {
-  height: 150px;
+.event .event-details li {
   overflow: hidden;
+  margin-bottom: 5px;
 }
-.post .last-events li figure img {
-  width: 100%;
+.event .event-details li > * {
+  display: inline-block;
 }
-.post .last-events h3 {
-  font-size: 16px;
+.event .event-details .detail {
+  font-size: 13px;
+  text-transform: uppercase;
 }
 /*----/ $FOOTER */
+body > footer {
+  text-transform: uppercase;
+}
+body > footer a {
+  color: #fff;
+}
+body > footer .options-footer {
+  background: #000;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+body > footer .options-footer a {
+  font-size: 12px;
+  font-weight: bold;
+}
+body > footer .options-footer button {
+  background: transparent;
+}
+body > footer .options-footer h2 {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 0;
+}
+body > footer .options-footer ul.menu {
+  padding-left: 15px;
+  list-style: none;
+}
+body > footer .options-footer ul.menu li {
+  position: relative;
+}
+body > footer .options-footer ul.menu li:before {
+  content: "";
+  border-color: transparent #fff;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 5px;
+  position: absolute;
+}
+body > footer .menu-footer {
+  border-bottom: 1px solid #fff;
+}
+body > footer .last {
+  font-size: 12px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+body > footer .last a {
+  color: #333;
+}
+body > footer .last .copying {
+  padding-top: 5px;
+}
+body > footer .last .copying img {
+  height: 20px;
+}
 /*# sourceMappingURL=/martadero-mockups/html-css-js/css/style.css.map */

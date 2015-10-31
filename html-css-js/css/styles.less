@@ -126,7 +126,15 @@
  }
 
  input {
-
+  &.control{
+   border-width: 1px;
+   padding: 5px;
+   color: #333;
+  }
+  &.white {
+   border-color: #fff;
+   background: transparent;
+  }
  }
 
 /*----/----/ $BUTTONS */
@@ -137,6 +145,7 @@
  padding: 5px 7px;
  &.white {
   border-color:#fff ;
+  color: #fff;
  }
 }
 
@@ -195,6 +204,50 @@
   box-shadow: 0px 0px 3px 0px #333;
   position: relative;
   z-index: 10;
+  .navbar-black {
+   background: #000000;
+   border-bottom: 1px solid #fff;
+   a {
+    color: #6f6f6f;
+   }
+   li a {
+    text-transform: uppercase;
+   }
+   .navbar-brand img {
+    height: 35px;
+    margin-top: 5px;
+   }
+   .search {
+    .search-box {
+     height: 30px;
+     margin-top: 10px;
+    }
+    i {
+     position: absolute;
+     right: 5px;
+     top: 0px;
+     font-size: 20px;
+    }
+   }
+   .form-control {
+    border-color: #6f6f6f;
+    color: #6f6f6f;
+    background: #000;
+   }
+   .socialmedia {
+    margin-top: 10px;
+    margin-left: 20px;
+    a {
+     border: 2px solid #6F6F6F;
+     border-radius: 100%;
+     display: block;
+     width: 30px;
+     height: 30px;
+     text-align: center;
+     line-height: 2
+    }
+   }
+  }
   .navbar-header {
     h1 {
      margin-top: 0;
@@ -204,30 +257,61 @@
      padding: 3px 10px;
     }
    }
-  .navbar-nav > li > a {
-   color: #000;
-   padding-top: 14px;
+  .navbar-second {
+   border-bottom: 1px solid #fff;
    text-transform: uppercase;
+   li a {
+     padding-top: 14px;
+   }
+   a {
+    color: #000;
+   }
+   h1 {
+    padding-top: 20px;
+   }
+   .submenu-black {
+    li a {
+      font-size: 13px;
+      padding: 5px 15px;
+     }
+   }
+   .navbar-nav {
+    padding-top: 25px;
+   }
+   .login {
+    background: #000;
+    color: #fff;
+    font-family: "HelveticaBd";
+    font-size: 13px;
+    line-height: 1;
+    margin-left: 30px;
+    padding: 5px;
+    text-transform: uppercase;
+    width: 125px;
+    .title-login {
+     margin-top: 5px;
+     margin-bottom: 5px;
+    }
+    .login-options {
+     .new-register {
+      font-size: 10px;
+      margin-bottom: 5px;
+     }
+    }
+    a {
+     color: #fff;
+    }
+   }
   }
+
 }
 /*----/ $BODY */
  body {
-  > .content {
-   padding-left: 70px;
-  > .nav-left {
-   background: #222222;
-   left: 0px;
-   width: 55px;
-   height: 100%;
-   position: absolute;
-   a {
+  .submenu-black {
+   background: #000;
+   border-radius: 0;
+   li a {
     color: #fff;
-    display: block;
-    height: 50px;
-    font-size: 20px;
-    text-align: center;
-    padding: 10px;
-    }
    }
   }
  }
@@ -239,16 +323,43 @@
  .home {
   main {
    .events-container {
-    .btn-filter {
-     position: absolute;
-     right: 10px;
-     top: 10px;
-     z-index: 100;
-     color: #fff;
-     text-transform: uppercase;
-     font-family: "HelveticaBd";
-     line-height: 0;
+    .menu-categories {
+     position: relative;
+     .btn-filter {
+      background: #000 none repeat scroll 0% 0%;
+      position: absolute;
+      padding: 15px 10.5px;
+      right: -15px;
+      top: 0px;
+      color: #FFF;
+      text-transform: uppercase;
+      font-family: "HelveticaBd";
+      line-height: 0;
+      z-index: 100;
+      font-size: 12px;
+     }
+     .dropdown-menu {
+      top: 42px;
+      left: auto;
+      right: -15px;
+      width: 125px;
+      min-width: 0;
+      li {
+       padding: 5px 10px;
+       a {
+        padding: 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 11px;
+        &:hover,
+        &:focus {
+         background: none;
+        }
+       }
+      }
+     }
     }
+
     h3 {
      font-size: 24px;
     }
@@ -266,17 +377,40 @@
      .event {
       transition: all 0.2s ease 0.2s;
       background: rgba(23,23,23,0.6);
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid #fff;
+      height: 275px;
       &:hover {
        background: none;
       }
-     }
-     > *[class*="col"] {
-      border-bottom: 1px solid #fff;
-      border-right: 1px solid #fff;
-      height: 500px;
       &:nth-child(2n) {
        border-right: none;
       }
+      &.feature {
+       height: 550px;
+       .tag-feature {
+        position: absolute;
+        right: 15px;
+        top:45px;
+        border: 3px solid #fff;
+        font-family: "HelveticaBd";
+        > div.tag-feature-title {
+         background: #fff;
+         color:#000;
+         text-transform: uppercase;
+         font-size: 13px;
+        }
+        > div.tag-feature-body {
+         font-size: 80px;
+         text-align: center;
+         color: #fff;
+         line-height: 0.9;
+         padding-bottom: 15px;
+        }
+       }
+      }
+     }
+     *[class*="col"] {
       .category {
        background: #fff;
        display: inline-block;
@@ -285,17 +419,33 @@
        line-height: 0;
        padding: 15px 10px;
        text-transform: uppercase;
-       &.visuales {
-        background: #F682DA;
+       &.letrasyliteratura {
+        background: #c4cfb5;
        }
-       &.escenicas {
+       &.interaccionsocial {
+        background: #ff7200;
+       }
+       &.audiovisual{
+        background:#836981;
+       }
+       &.musica{
+        background:#efdeb4;
+       }
+       &.artesvisuales {
+        background: #e89cdb;
+       }
+       &.artesescenicas {
         background: #95B2D2;
+       }
+       &.arquitectura {
+        background:#f3bc3a;
        }
       }
       .events-summary {
        bottom: 0;
        position: absolute;
        padding-bottom: 10px;
+       width: 95%;
        a, p {
         color: #fff;
        }
@@ -303,16 +453,6 @@
         font-family: "HelveticaBd";
         font-size: 15px;
         text-transform: lowercase;
-       }
-      }
-     }
-     > *[class="col-md-6"] {
-       .event {
-       height: 250px;
-       border-right: 1px solid #fff;
-       border-bottom: 1px solid #fff;
-       &:nth-child(2n) {
-        border-right: none;
        }
       }
      }
@@ -327,57 +467,131 @@
   }
  }
 
- /*----/----/ $POST */
- .post {
-  .post-container {
-   > .col-md-1 {
-    width: 50px;
-    padding-top: 20px;
-    font-size: 30px;
-    padding-right: 0;
-   }
-   .tags-social {
-    a {
-     color: #222;
-    }
-    .tags li {
-     padding: 0px 10px;
-     border-right: 1px solid #222;
-     line-height: 1;
-     font-family: "HelveticaBd";
-     text-transform: uppercase;
-     font-size: 12px;
-     &:last-child {
-      border: none;
-     }
-    }
-    .social a {
-     font-size:25px ;
-    }
+/*----/----/ $EVENT */
+.event {
+ .event-details {
+  font-size: 14px;
+  li {
+   overflow: hidden;
+   margin-bottom: 5px;
+   > * {
+    display: inline-block;
    }
   }
-  .last-events {
-   li {
-    list-style: none;
-    figure {
-     height: 150px;
-     overflow: hidden;
-     img {
-      width: 100%;
-     }
-    }
-   }
-   h3 {
-    font-size: 16px;
-   }
+  .detail {
+   font-size: 13px;
+   text-transform: uppercase;
   }
  }
+}
+// .post {
+//  .post-container {
+//   > .col-md-1 {
+//    width: 50px;
+//    padding-top: 20px;
+//    font-size: 30px;
+//    padding-right: 0;
+//   }
+//   .tags-social {
+//    a {
+//     color: #222;
+//    }
+//    .tags li {
+//     padding: 0px 10px;
+//     border-right: 1px solid #222;
+//     line-height: 1;
+//     font-family: "HelveticaBd";
+//     text-transform: uppercase;
+//     font-size: 12px;
+//     &:last-child {
+//      border: none;
+//     }
+//    }
+//    .social a {
+//     font-size:25px ;
+//    }
+//   }
+//  }
+//  .last-events {
+//   li {
+//    list-style: none;
+//    figure {
+//     height: 150px;
+//     overflow: hidden;
+//     img {
+//      width: 100%;
+//     }
+//    }
+//   }
+//   h3 {
+//    font-size: 16px;
+//   }
+//  }
+// }
 
 /*----/ $FOOTER */
- body > header {
-
-
-
+body > footer {
+ text-transform: uppercase;
+ a {
+  color: #fff;
  }
+ .options-footer {
+  background: #000;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  a {
+   font-size: 12px;
+   font-weight: bold;
+  }
+  button {
+   background: transparent;
+  }
+  h2 {
+   font-size: 12px;
+   color: #fff;
+   margin-top: 0;
+  }
+  ul.menu {
+   padding-left: 15px;
+   list-style: none;
+   li {
+    position: relative;
+   }
+   li:before {
+    content: "";
+    border-color: transparent #fff;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: inline-block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 5px;
+    position: absolute;
+   }
+
+  }
+ }
+ .menu-footer {
+  border-bottom: 1px solid #fff;
+ }
+ .last {
+  font-size: 12px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  a {
+   color: #333;
+  }
+  .copying {
+   padding-top: 5px;
+   img {
+    height: 20px;
+   }
+  }
+ }
+}
+
+
 
 
