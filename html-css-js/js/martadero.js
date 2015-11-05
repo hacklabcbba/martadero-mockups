@@ -1,24 +1,23 @@
-/**
- * Created by marcelorodcla on 09-08-15.
- */
 $(document).ready(function(){
-    $('.gs-slidenav-option').on('click', function(){
-        $('.gs-slidenav').toggleClass('open');
-        console.log('in');
-        $('.gs-slidenav-menu').removeClass('close-menu');
-    } )
+    var $loginBox = $("#login-box");
+    $("#login a").click(function(e){
+        e.stopPropagation();
+        $loginBox.slideDown();
+    });
+
+    $("html").click(function(e){
+        var clickOver_loginBox = $(e.target).attr("id") == $loginBox.attr("id");
+        var clickOverChild_LoginBox =  $(e.target).parents("#login-box").length > 0;
+        if (clickOver_loginBox || clickOverChild_LoginBox ){
+            e.stopPropagation();
+        }
+        else {
+            $loginBox.slideUp();
+        }
+    });
+    $(document).keydown(function(e){
+        if ( e.keyCode == "27" ) {
+            $loginBox.slideUp();
+        }
+    });
 });
-
-
-//$(document).ready(function(){
-//    var $event = $(".events .event.feature:nth-child(2n+2)").next(".event").addClass("eurke");
-//    $event.each(function(){
-//        var $eventPosition = $(this).position().top;
-//        console.log($(this).position().top);
-//        //$(this).css({
-//        //    position: 'absolute',
-//        //    top: $eventPosition - 275 +'px'
-//        //});
-//    });
-//});
-

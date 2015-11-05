@@ -10,9 +10,8 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/martadero.js"></script>
-    <script src="js/jquery.babylongrid.js"></script>
 </head>
-<body class="event">
+<body class="event-page page">
     <header>
         <div class="container-fluid navbar-black">
             <div class="navbar-header">
@@ -82,14 +81,66 @@
             <nav id="bs-navbar" class="collapse navbar-collapse no-padding-right-md">
                 <h2 class="visually-hidden">Menú de navegación</h2>
                 <div class="login pull-right text-center">
+                    <!--
                     <img src="images/login-ico.png" alt=""/>
                     <div class="title-login">
                         Reserva <br/>tu espacio
                     </div>
                     <ul class="list-unstyled no-margin login-options">
                         <li class="new-register"><a href="#">Nuevo registro</a></li>
-                        <li><a href="#">Entrar</a></li>
+                        <li id="login"><a href="#">Entrar</a></li>
                     </ul>
+                    <div id="login-box">
+                        <h3>Iniciar sesión</h3>
+                        <div class="padding-xs">
+                            <form>
+                                <div class="input-container">
+                                    <input type="text" class="form-control"/>
+                                    <i class="glyphicon glyphicon-user"></i>
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" class="form-control"/>
+                                    <i class="glyphicon glyphicon-lock"></i>
+                                </div>
+                                <div>
+                                    <input type="submit" class="form-control login-button" value="Iniciar sesión"/>
+                                </div>
+                            </form>
+                            <div class="login-socialmedia">
+                                <span class="display-inline-block box-title">o a través de </span>
+                                <div class="overflow-hidden">
+                                    <a href="#" class="display-inline-block pull-left text-center facebook"><i class="fa fa-facebook-f"></i></a>
+                                    <a href="#" class="display-inline-block pull-right text-center googleplus"><i class="fa fa-google-plus"></i></a>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="btn login-button form-control">Crear cuenta</a>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <figure class="avatar">
+                        <img src="images/avatar.jpeg" alt="Nombre de usuario" class="img-circle img-responsive"/>
+                    </figure>
+                    <div class="user-name" id="login">
+                        <a href="#" >Nombre de usuario</a>
+                    </div>
+                    <div id="login-box" class="user-menu">
+                        <ul class="list-unstyled user-options">
+                            <li>
+                                <a href=""><i class="fa fa-wrench width-10-md"></i> <span class="width-90-md">Administrador digital</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-edit width-10-md"></i> <span class="width-90-md">Editar perfil</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-cog width-10-md"></i> <span class="width-90-md">Configuración</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-power-off width-10-md"></i> <span class="width-90-md">Salir</span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <ul class="nav navbar-nav  navbar-right">
                    <li class="dropdown">
@@ -145,69 +196,89 @@
         <main class="row">
             <div class="col-md-12">
                 <header>
-                    <div>
+                    <div class="text-uppercase event-number">
                         Evento N°2334
                     </div>
-                    <h2>
+                    <h2 class="no-margin-top">
                         Conversaciones Anomalas: "Literatura y vulgaridad"
                     </h2>
-                    <div>
-                        <span>Martes 14 de octubre</span><span>Hora: 18:00</span><span>Costo: ingreso libre</span>
+                    <div class="date">
+                        <span>Martes 14 de octubre</span><span class="separator">|</span><span>Hora: 18:00</span><span class="separator">|</span><span>Costo: ingreso libre</span>
                     </div>
                 </header>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-7 main-content">
                         <figure>
                             <img src="images/sample1.jpg" class="img-responsive" alt="">
                         </figure>
-                        <h3>Detalle</h3>
-                        <p>
-                            ¿Por qué organizar conversatorios sobre literatura y video juegos? Sobre literatura y crimen? literatura y filoposia o poesía y gore? En qué coinciden los autores que aceptan darle vueltas a asuntos, aparentemente, tan disímiles? La respuesta a la primera pregunta, bien podría ser una nueva interrogante: ¿por qué no? y frente a la segunda, una igual de sencilla: cada uno de los invitados está más allá de su propia obra y no poseen reparos en meterle mano a este tipo de asuntos que muchas veces lindan con lo extraliterario.
-                        </p>
-                        <p>
-                            De este modo, “Conversaciones anómalas” pretende ser una alternativa tanto para escritores como lectores interesados en disfrutar de ciertas rarezas y de pequeñas joyas autoriales que le permitan atar o soltar cabos, antes de continuar ahondando en las anomalías con que la literatura ha contado siempre.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit purus, tristique ut tincidunt nec, sagittis eget diam. Vivamus eu nibh nec orci fermentum faucibus. Vivamus tincidunt ex felis, eget mattis leo mattis nec. Donec feugiat rutrum justo, sed hendrerit erat malesuada sit amet. Cras nec elit tristique, pharetra elit a, lacinia ligula. Nulla hendrerit massa ex, in placerat orci tempus ut. Donec viverra eleifend neque, sit amet pretium tellus fringilla ac. Pellentesque tincidunt felis vel porttitor gravida. Pellentesque malesuada, turpis vitae dictum accumsan, orci lorem faucibus elit, tempor maximus justo augue sed sapien. Cras pellentesque molestie magna, quis dictum ligula sodales quis. Donec semper orci et ultricies aliquet.
-                        </p>
-                        <h4>Sobre el tallerista</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit purus, tristique ut tincidunt nec, sagittis eget diam. Vivamus eu nibh nec orci fermentum faucibus. Vivamus tincidunt ex felis, eget mattis leo mattis nec. Donec feugiat rutrum justo, sed hendrerit erat malesuada sit amet. Cras nec elit tristique, pharetra elit a, lacinia ligula. Nulla hendrerit massa ex, in placerat orci tempus ut. Donec viverra eleifend neque, sit amet pretium tellus fringilla ac. Pellentesque tincidunt felis vel porttitor gravida. Pellentesque malesuada, turpis vitae dictum accumsan, orci lorem faucibus elit, tempor maximus justo augue sed sapien. Cras pellentesque molestie magna, quis dictum ligula sodales quis. Donec semper orci et ultricies aliquet.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit purus, tristique ut tincidunt nec, sagittis eget diam. Vivamus eu nibh nec orci fermentum faucibus. Vivamus tincidunt ex felis, eget mattis leo mattis nec. Donec feugiat rutrum justo, sed hendrerit erat malesuada sit amet. Cras nec elit tristique, pharetra elit a, lacinia ligula. Nulla hendrerit massa ex, in placerat orci tempus ut. Donec viverra eleifend neque, sit amet pretium tellus fringilla ac. Pellentesque tincidunt felis vel porttitor gravida. Pellentesque malesuada, turpis vitae dictum accumsan, orci lorem faucibus elit, tempor maximus justo augue sed sapien. Cras pellentesque molestie magna, quis dictum ligula sodales quis. Donec semper orci et ultricies aliquet.
-                        </p>
+                        <section>
+                            <h3>Detalle</h3>
+                            <p>
+                                ¿Por qué organizar conversatorios sobre literatura y video juegos? Sobre literatura y crimen? literatura y filoposia o poesía y gore? En qué coinciden los autores que aceptan darle vueltas a asuntos, aparentemente, tan disímiles? La respuesta a la primera pregunta, bien podría ser una nueva interrogante: ¿por qué no? y frente a la segunda, una igual de sencilla: cada uno de los invitados está más allá de su propia obra y no poseen reparos en meterle mano a este tipo de asuntos que muchas veces lindan con lo extraliterario.
+                            </p>
+                            <p>
+                                De este modo, “Conversaciones anómalas” pretende ser una alternativa tanto para escritores como lectores interesados en disfrutar de ciertas rarezas y de pequeñas joyas autoriales que le permitan atar o soltar cabos, antes de continuar ahondando en las anomalías con que la literatura ha contado siempre.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit purus, tristique ut tincidunt nec, sagittis eget diam. Vivamus eu nibh nec orci fermentum faucibus. Vivamus tincidunt ex felis, eget mattis leo mattis nec. Donec feugiat rutrum justo, sed hendrerit erat malesuada sit amet. Cras nec elit tristique, pharetra elit a, lacinia ligula. Nulla hendrerit massa ex, in placerat orci tempus ut. Donec viverra eleifend neque, sit amet pretium tellus fringilla ac. Pellentesque tincidunt felis vel porttitor gravida. Pellentesque malesuada, turpis vitae dictum accumsan, orci lorem faucibus elit, tempor maximus justo augue sed sapien. Cras pellentesque molestie magna, quis dictum ligula sodales quis. Donec semper orci et ultricies aliquet.
+                            </p>
+                        </section>
+                        <section>
+                            <h4>Sobre el tallerista</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit purus, tristique ut tincidunt nec, sagittis eget diam. Vivamus eu nibh nec orci fermentum faucibus. Vivamus tincidunt ex felis, eget mattis leo mattis nec. Donec feugiat rutrum justo, sed hendrerit erat malesuada sit amet. Cras nec elit tristique, pharetra elit a, lacinia ligula. Nulla hendrerit massa ex, in placerat orci tempus ut. Donec viverra eleifend neque, sit amet pretium tellus fringilla ac. Pellentesque tincidunt felis vel porttitor gravida. Pellentesque malesuada, turpis vitae dictum accumsan, orci lorem faucibus elit, tempor maximus justo augue sed sapien. Cras pellentesque molestie magna, quis dictum ligula sodales quis. Donec semper orci et ultricies aliquet.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit purus, tristique ut tincidunt nec, sagittis eget diam. Vivamus eu nibh nec orci fermentum faucibus. Vivamus tincidunt ex felis, eget mattis leo mattis nec. Donec feugiat rutrum justo, sed hendrerit erat malesuada sit amet. Cras nec elit tristique, pharetra elit a, lacinia ligula. Nulla hendrerit massa ex, in placerat orci tempus ut. Donec viverra eleifend neque, sit amet pretium tellus fringilla ac. Pellentesque tincidunt felis vel porttitor gravida. Pellentesque malesuada, turpis vitae dictum accumsan, orci lorem faucibus elit, tempor maximus justo augue sed sapien. Cras pellentesque molestie magna, quis dictum ligula sodales quis. Donec semper orci et ultricies aliquet.
+                            </p>
+                        </section>
                         <section>
                             <h3>Deja tu comentario</h3>
 
                         </section>
 
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5 side">
                         <section>
                             <h3>Datos generales</h3>
-                            <ul class="list-unstyled event-details">
+                            <ul class="list-unstyled list-description">
                                 <li>
-                                    <span class="width-45-md detail pull-left"><b>Fecha</b></span>
-                                    <span class="width-50-md pull-right">Martes 14 de octubre 2015</span>
+                                    <span class="width-40-md caption-item pull-left">Fecha</span>
+                                    <span class="width-55-md pull-right">Martes 14 de octubre 2015</span>
                                 </li>
                                 <li>
-                                    <span class="width-45-md detail pull-left"><b>Ciudad y país de origen</b></span>
-                                    <span class="width-50-md pull-right">Cochabamba</span>
+                                    <span class="width-40-md caption-item pull-left">Ciudad y país de origen</span>
+                                    <span class="width-55-md pull-right">Cochabamba</span>
                                 </li>
                                 <li>
-                                    <span class="width-45-md detail pull-left"><b>Tipo de actividad</b></span>
-                                    <span class="width-50-md pull-right">Conversatorio</span>
+                                    <span class="width-40-md caption-item pull-left">Tipo de actividad</span>
+                                    <span class="width-55-md pull-right">Conversatorio</span>
                                 </li>
                             </ul>
                         </section>
                         <section>
                             <h3>Sala de prensa descargas</h3>
+                            <div class="tabs-section">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#tabpress" aria-controls="home" role="tab" data-toggle="tab">Nota de prensa</a></li>
+                                    <li role="presentation"><a href="#tabvideo" aria-controls="profile" role="tab" data-toggle="tab">Video</a></li>
+                                    <li role="presentation"><a href="#tabphotos" aria-controls="messages" role="tab" data-toggle="tab">Fotos</a></li>
+                                    <li role="presentation"><a href="#tabpack" aria-controls="settings" role="tab" data-toggle="tab">Pack Completo</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="tabpress">...</div>
+                                    <div role="tabpanel" class="tab-pane" id="tabvideo">...</div>
+                                    <div role="tabpanel" class="tab-pane" id="tabphotos">...</div>
+                                    <div role="tabpanel" class="tab-pane" id="tabpack">...</div>
+                                </div>
+                            </div>
                         </section>
                         <section>
                             <h3>Reserva entradas - Cupo</h3>
+                            <p>Esta actividad admite la reserva de entradas o cupos, asegura tu presencia reservando por adelantado.</p>
+                            <a href="#" class="btn width-30-md text-uppercase">Reservar</a>
                         </section>
-                        <section>
+                        <section class="only-martadero">
                             <h3>Requerimientos</h3>
                             <section>
                                 <h4>Requerimientos técnicos</h4>
@@ -236,150 +307,152 @@
                                 <h4>Requerimientos específicos</h4>
                                 <p>Abrir la sala 2 horas antes de la actividad. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elit purus, tristique ut tincidunt nec, sagittis eget diam. Vivamus eu nibh nec orci.</p>
                             </section>
+                            <section>
+                                <h3>Contacto</h3>
+                                <ul class="list-description">
+                                    <li>
+                                        <span class=" width-30-md pull-left caption-item">Nombre: </span>
+                                        <span class="width-65-md pull-right">Juan Perez</span>
+                                    </li>
+                                    <li>
+                                        <span class=" width-30-md pull-left caption-item">Teléfonos: </span>
+                                        <span class="width-65-md pull-right">45678 - 1232</span>
+                                    </li>
+                                    <li>
+                                        <span class=" width-30-md pull-left caption-item">Correo: </span>
+                                        <span class="width-65-md pull-right">juanperez@gmail.com</span>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>Responsable de la actividad</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span>Juan Malebrán</span>
+                                    </li>
+                                    <li>
+                                        <span>Letras mARTadero</span>
+                                    </li>
+                                </ul>
+                            </section>
                         </section>
-                        <section>
-                            <h3>Contacto</h3>
-                        </section>
-                        <section>
-                            <h3>Responsable de la actividad</h3>
-                            <ul>
-                                <li>
-
-                                </li>
-                            </ul>
-                        </section>
-
                     </div>
                 </div>
             </div>
         </main>
     </div>
-    <footer class="margin-top-md container-fluid">
-        <div class="row options-footer">
-            <div class="col-md-12">
-                <div class="menu-footer margin-bottom-xs-sm margin-bottom-xs-md margin-bottom-md-xs margin-bottom-lg-xs ">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h2>
-                                        Próximos eventos
-                                    </h2>
-                                    <ul class="menu margin-bottom-xs-sm">
-                                        <li>
-                                            <a href="#">El complejo</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Laboratorio Fotográfico Complejidades</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Black Mirror Doblete Hacker</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <h2>
-                                        Último en el blog
-                                    </h2>
-                                    <ul class="menu margin-bottom-xs-sm">
-                                        <li>
-                                            <a href="#">Un parque más, un deporte urbano menos </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">La Internet se escribe en femenino</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Barrio Hacker: una Web Que Queremos</a>
-                                        </li>
-                                    </ul>
+    <footer class="margin-top-md footer-page">
+        <div class="options-footer">
+            <div class="container position-relative">
+                <ul class="row footer-buttons">
+                    <li class="col-md-3">
+                        <a href="#">
+                            <span class="caption-title">
+                                Ver próximos
+                            </span>
+                            <span class="title-link">
+                                eventos
+                            </span>
+                        </a>
+                    </li>
+                    <li class="col-md-3">
+                        <a href="#">
+                            <span class="caption-title">
+                                Último en el
+                            </span>
+                            <span class="title-link">
+                                blog
+                            </span>
+                        </a>
+                    </li>
+                    <li class="col-md-3">
+                        <a href="#">
+                            <span class="caption-title">
+                                Conoce nuestros
+                            </span>
+                            <span class="title-link">
+                                servicios
+                            </span>
+                        </a>
+                    </li>
+                    <li class="col-md-3">
+                        <a href="#">
+                            <span class="caption-title">
+                                Reserva un
+                            </span>
+                            <span class="title-link">
+                                Espacio
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="row social-suscribe">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6 margin-bottom-xs-sm">
+                                <h2>
+                                    Únete a la conversación
+                                </h2>
+                                <ul class="list-inline list-unstyled">
+                                    <li>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-tumblr"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-vine"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 margin-bottom-xs-sm">
+                                <h2>
+                                    Recibe la información de mARTadero
+                                </h2>
+                                <div>
+                                    <input type="text" placeholder="Dirección de correo" class="control margin-right-md-xs width-70-md width-70-lg width-100-xs margin-bottom-xs"/><button class="btn white width-20-md width-20-lg width-80-xs center-block-xs">SUSCRIBIRSE</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-6 margin-bottom-xs-sm">
-                                    <h2>
-                                        Conoce los servicios del martadero
-                                    </h2>
-                                    <a href="#" class="btn white width-80-xs width-80-md width-80-lg center-block-xs">Servicios</a>
-                                </div>
-                                <div class="col-md-6 margin-bottom-xs-sm">
-                                    <h2>
-                                        Reserva el espacio
-                                    </h2>
-                                    <a href="#" class="btn white width-80-xs width-80-md width-80-lg center-block-xs">Reserva</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-6 margin-bottom-xs-sm">
-                        <h2>
-                            Únete a la conversación
-                        </h2>
-                        <ul class="list-inline list-unstyled">
-                            <li>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-youtube"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-tumblr"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-vine"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 margin-bottom-xs-sm">
-                        <h2>
-                            Recibe la información de mARTadero
-                        </h2>
-                        <div>
-                            <input type="text" placeholder="Dirección de correo" class="control margin-right-md-xs width-70-md width-70-lg width-100-xs margin-bottom-xs"/><button class="btn white width-20-md width-20-lg width-80-xs center-block-xs">SUSCRIBIRSE</button>
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row last">
-            <div class="col-md-6">
-                <ul class="list-inline list-unstyled text-left text-center-xs no-margin">
-                    <li >
-                        Proyecto generado por <a href="http://www.martadero.org/arte-cultura/quienes_somos.html" title="NADA"><strong>NADA</strong></a> <a href="http://www.martadero.org/arte-cultura/quienes_somos.html"><img src="images/logo_nada_web.jpg" alt="NADA" title="NADA" height="26" width="18" /></a> <span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;|</span>
-                    </li>
-                    <li>
-                        Gestionado por <a href="http://www.fundacionimagen.org" title="Fundación Imagen" target="_blank"><strong>FundaciónImagen</strong></a> <a href="http://www.fundacionimagen.org" target="_blank"><img src="images/logo_fi_web.jpg" alt="Fundación Imagen" title="Fundación Imagen"/></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-6 text-right copying text-center-xs">
-                comparte los contenidos de esta página libremente <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" class="margin-left-md-sm" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+        <div class="container">
+            <div class="row last">
+                <div class="col-md-6">
+                    <ul class="list-inline list-unstyled text-left text-center-xs no-margin">
+                        <li >
+                            Proyecto generado por <a href="http://www.martadero.org/arte-cultura/quienes_somos.html" title="NADA"><strong>NADA</strong></a> <a href="http://www.martadero.org/arte-cultura/quienes_somos.html"><img src="images/logo_nada_web.jpg" alt="NADA" title="NADA" height="26" width="18" /></a> <span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                        </li>
+                        <li>
+                            Gestionado por <a href="http://www.fundacionimagen.org" title="Fundación Imagen" target="_blank"><strong>FundaciónImagen</strong></a> <a href="http://www.fundacionimagen.org" target="_blank"><img src="images/logo_fi_web.jpg" alt="Fundación Imagen" title="Fundación Imagen"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-right copying text-center-xs">
+                    comparte los contenidos de esta página libremente <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" class="margin-left-md-sm" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+                </div>
             </div>
         </div>
     </footer>
     <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
 
-        });
     </script>
 </body>
 </html>
