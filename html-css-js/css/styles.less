@@ -136,7 +136,25 @@
    background: transparent;
   }
  }
- /*----/----/ $CLASSES */
+/*----/----/ $CLASSES */
+ .border-circle {
+  border-radius: 100%;
+  border:2px solid #000;
+  width: 30px;
+  height: 30px;
+
+ }
+ /*----/----/----/ $HEADERS */
+ .title-page {
+  line-height: 1;
+  .border-circle  {
+   font-size: 20px;
+   line-height: 1.3;
+   text-align: center;
+   float: left;
+   margin-right: 10px;
+  }
+ }
 /*----/----/----/ $BUTTONS */
  .btn {
  border: 1px solid #000;
@@ -467,6 +485,11 @@
    font-weight: normal;
   }
   &.page {
+   .page-header {
+    padding-bottom: 0px;
+    margin: 0px 0 20px 0;
+    border-bottom: none;
+   }
    .content {
     margin-top: 50px;
    }
@@ -643,6 +666,31 @@
   }
  }
 
+/*----/----/ $EVENTS */
+.events-page {
+ .events-day a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000;
+ }
+ .events-tags {
+  margin-bottom: 30px;
+  a {
+   text-transform: uppercase;
+  }
+ }
+ .event {
+  margin-bottom: 30px;
+  h3 {
+   font-size: 20px;
+   margin-top: 0;
+  }
+  figure {
+   margin-bottom: 15px;
+  }
+ }
+}
+
 /*----/----/ $EVENT */
 .event-page {
  .date {
@@ -677,7 +725,62 @@
 
  }
 }
+/*----/----/ $REGISTER */
+.register-page {
+ .register-form {
+  > * {
+   margin-bottom: 20px;
+  }
+ }
+}
 
+/*----/----/ $CONVOCATIONS */
+.convocations-page {
+ .convocation {
+  margin-bottom: 20px;
+  border-right: 1px solid #ccc;
+  &:nth-child(4n+0){
+   border-right: none;
+  }
+  .convocation-date {
+   .ico {
+    font-size: 25px;
+    line-height: 0;
+    vertical-align: top;
+   }
+   .date {
+    font-size: 14px;
+    line-height: 1;
+   }
+  }
+  h3 {
+   margin-top: 5px;
+   font-size: 18px;
+  }
+ }
+}
+
+/*----/----/ $SERVICES */
+ .services-page {
+  .service {
+   margin-bottom: 20px;
+   figure {
+    height: 100px;
+    overflow: hidden;
+   }
+   h3 {
+    margin-top: 5px;
+    font-size: 18px;
+   }
+  }
+ }
+
+/*----/----/ $SERVICES */
+.media-page {
+ .media-download {
+  margin-bottom: 20px;
+ }
+}
 /*----/ $FOOTER */
 body > footer {
  text-transform: uppercase;
