@@ -128,12 +128,12 @@ input.white {
 /*----/----/----/ $BUTTONS */
 .btn {
   border: 1px solid #000;
-  border-radius: 0;
+  border-radius: 0 !important;
   color: #000;
   padding: 5px 7px;
 }
 .btn.white {
-  border-color: #fff ;
+  border-color: #fff;
   color: #fff;
 }
 .btn-md {
@@ -218,45 +218,55 @@ input.white {
   color: #222;
 }
 /*----/ $HEADER */
-body > header {
+body > header,
+body > .wrapper > header {
   box-shadow: 0px 0px 3px 0px #333;
   position: relative;
   z-index: 10;
 }
-body > header .navbar-black {
+body > header .navbar-black,
+body > .wrapper > header .navbar-black {
   background: #000000;
   border-bottom: 1px solid #fff;
 }
-body > header .navbar-black a {
+body > header .navbar-black a,
+body > .wrapper > header .navbar-black a {
   color: #6f6f6f;
 }
-body > header .navbar-black li a {
+body > header .navbar-black li a,
+body > .wrapper > header .navbar-black li a {
   text-transform: uppercase;
 }
-body > header .navbar-black .navbar-brand img {
+body > header .navbar-black .navbar-brand img,
+body > .wrapper > header .navbar-black .navbar-brand img {
   height: 35px;
   margin-top: 5px;
 }
-body > header .navbar-black .search .search-box {
+body > header .navbar-black .search .search-box,
+body > .wrapper > header .navbar-black .search .search-box {
   height: 30px;
   margin-top: 10px;
 }
-body > header .navbar-black .search i {
+body > header .navbar-black .search i,
+body > .wrapper > header .navbar-black .search i {
   position: absolute;
   right: 5px;
   top: 3px;
   font-size: 20px;
 }
-body > header .navbar-black .form-control {
+body > header .navbar-black .form-control,
+body > .wrapper > header .navbar-black .form-control {
   border-color: #6f6f6f;
   color: #6f6f6f;
   background: #000;
 }
-body > header .navbar-black .socialmedia {
+body > header .navbar-black .socialmedia,
+body > .wrapper > header .navbar-black .socialmedia {
   margin-top: 10px;
   margin-left: 20px;
 }
-body > header .navbar-black .socialmedia a {
+body > header .navbar-black .socialmedia a,
+body > .wrapper > header .navbar-black .socialmedia a {
   border: 2px solid #6F6F6F;
   border-radius: 100%;
   display: block;
@@ -265,36 +275,45 @@ body > header .navbar-black .socialmedia a {
   text-align: center;
   line-height: 2;
 }
-body > header .navbar-header h1 {
+body > header .navbar-header h1,
+body > .wrapper > header .navbar-header h1 {
   margin-top: 0;
 }
-body > header .navbar-header .navbar-brand {
+body > header .navbar-header .navbar-brand,
+body > .wrapper > header .navbar-header .navbar-brand {
   height: auto;
   padding: 3px 10px;
 }
-body > header .navbar-second {
+body > header .navbar-second,
+body > .wrapper > header .navbar-second {
   border-bottom: 1px solid #fff;
   text-transform: uppercase;
   height: 100px;
 }
-body > header .navbar-second li a {
+body > header .navbar-second li a,
+body > .wrapper > header .navbar-second li a {
   padding-top: 14px;
 }
-body > header .navbar-second a {
+body > header .navbar-second a,
+body > .wrapper > header .navbar-second a {
   color: #000;
 }
-body > header .navbar-second h1 {
+body > header .navbar-second h1,
+body > .wrapper > header .navbar-second h1 {
   padding-top: 20px;
 }
-body > header .navbar-second .submenu-black li a {
+body > header .navbar-second .submenu-black li a,
+body > .wrapper > header .navbar-second .submenu-black li a {
   font-size: 13px;
   padding: 5px 15px;
   color: #fff;
 }
-body > header .navbar-second .navbar-nav {
+body > header .navbar-second .navbar-nav,
+body > .wrapper > header .navbar-second .navbar-nav {
   padding-top: 25px;
 }
-body > header .navbar-second .login {
+body > header .navbar-second .login,
+body > .wrapper > header .navbar-second .login {
   background: #000;
   color: #fff;
   font-family: "HelveticaBd";
@@ -306,7 +325,8 @@ body > header .navbar-second .login {
   text-transform: uppercase;
   width: 125px;
 }
-body > header .navbar-second .login .avatar {
+body > header .navbar-second .login .avatar,
+body > .wrapper > header .navbar-second .login .avatar {
   display: block;
   height: 50px;
   margin-bottom: 13px;
@@ -314,21 +334,25 @@ body > header .navbar-second .login .avatar {
   margin-right: auto;
   width: 50px;
 }
-body > header .navbar-second .login .user-name {
+body > header .navbar-second .login .user-name,
+body > .wrapper > header .navbar-second .login .user-name {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-body > header .navbar-second .login .title-login {
+body > header .navbar-second .login .title-login,
+body > .wrapper > header .navbar-second .login .title-login {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-body > header .navbar-second .login .login-options .new-register {
+body > header .navbar-second .login .login-options .new-register,
+body > .wrapper > header .navbar-second .login .login-options .new-register {
   font-size: 10px;
   margin-bottom: 10px;
 }
-body > header .navbar-second .login #login-box {
+body > header .navbar-second .login #login-box,
+body > .wrapper > header .navbar-second .login #login-box {
   background: #000;
   display: none;
   color: #fff;
@@ -339,57 +363,69 @@ body > header .navbar-second .login #login-box {
   width: 260px;
   text-transform: none;
 }
-body > header .navbar-second .login #login-box.user-menu {
+body > header .navbar-second .login #login-box.user-menu,
+body > .wrapper > header .navbar-second .login #login-box.user-menu {
   text-transform: uppercase;
   color: #fff;
   text-align: left;
   margin-top: 19px;
 }
-body > header .navbar-second .login #login-box.user-menu .user-options {
+body > header .navbar-second .login #login-box.user-menu .user-options,
+body > .wrapper > header .navbar-second .login #login-box.user-menu .user-options {
   margin-bottom: 0;
 }
-body > header .navbar-second .login #login-box.user-menu .user-options li {
+body > header .navbar-second .login #login-box.user-menu .user-options li,
+body > .wrapper > header .navbar-second .login #login-box.user-menu .user-options li {
   margin-bottom: 8px;
 }
-body > header .navbar-second .login #login-box.user-menu .user-options li:last-child {
+body > header .navbar-second .login #login-box.user-menu .user-options li:last-child,
+body > .wrapper > header .navbar-second .login #login-box.user-menu .user-options li:last-child {
   margin-bottom: 0;
 }
-body > header .navbar-second .login #login-box.user-menu .user-options span {
+body > header .navbar-second .login #login-box.user-menu .user-options span,
+body > .wrapper > header .navbar-second .login #login-box.user-menu .user-options span {
   border-bottom: 1px solid #fff;
   display: inline-block;
   padding-bottom: 5px;
   margin-left: -5px;
 }
-body > header .navbar-second .login #login-box h3 {
+body > header .navbar-second .login #login-box h3,
+body > .wrapper > header .navbar-second .login #login-box h3 {
   margin-top: 0px;
   color: #FFF;
   margin-bottom: 20px;
   font-size: 15px;
 }
-body > header .navbar-second .login #login-box .form-control {
+body > header .navbar-second .login #login-box .form-control,
+body > .wrapper > header .navbar-second .login #login-box .form-control {
   border-color: #6F6F6F;
   color: #6F6F6F;
   background: #000 none repeat scroll 0% 0%;
   margin-bottom: 5px;
 }
-body > header .navbar-second .login #login-box .login-button {
+body > header .navbar-second .login #login-box .login-button,
+body > .wrapper > header .navbar-second .login #login-box .login-button {
   color: #222;
   background: #fff;
   border: none;
 }
-body > header .navbar-second .login #login-box .input-container {
+body > header .navbar-second .login #login-box .input-container,
+body > .wrapper > header .navbar-second .login #login-box .input-container {
   position: relative;
 }
-body > header .navbar-second .login #login-box .input-container input {
+body > header .navbar-second .login #login-box .input-container input,
+body > .wrapper > header .navbar-second .login #login-box .input-container input {
   padding-left: 30px;
 }
-body > header .navbar-second .login #login-box .input-container i {
+body > header .navbar-second .login #login-box .input-container i,
+body > .wrapper > header .navbar-second .login #login-box .input-container i {
   color: #6F6F6F;
   left: 10px;
   position: absolute;
   top: 10px;
 }
-body > header .navbar-second .login #login-box .login-socialmedia {
+body > header .navbar-second .login #login-box .login-socialmedia,
+body > .wrapper > header .navbar-second .login #login-box .login-socialmedia {
   padding: 15px 0;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -398,12 +434,14 @@ body > header .navbar-second .login #login-box .login-socialmedia {
   margin-bottom: 15px;
   position: relative;
 }
-body > header .navbar-second .login #login-box .login-socialmedia a {
+body > header .navbar-second .login #login-box .login-socialmedia a,
+body > .wrapper > header .navbar-second .login #login-box .login-socialmedia a {
   height: 35px;
   font-size: 15px;
   padding-top: 8px;
 }
-body > header .navbar-second .login #login-box .login-socialmedia .box-title {
+body > header .navbar-second .login #login-box .login-socialmedia .box-title,
+body > .wrapper > header .navbar-second .login #login-box .login-socialmedia .box-title {
   background: #000;
   position: absolute;
   padding: 5px 10px;
@@ -411,18 +449,25 @@ body > header .navbar-second .login #login-box .login-socialmedia .box-title {
   width: 44%;
   top: -13px;
 }
-body > header .navbar-second .login #login-box .login-socialmedia .facebook {
+body > header .navbar-second .login #login-box .login-socialmedia .facebook,
+body > .wrapper > header .navbar-second .login #login-box .login-socialmedia .facebook {
   background: #414A9D;
   width: 49%;
 }
-body > header .navbar-second .login #login-box .login-socialmedia .googleplus {
+body > header .navbar-second .login #login-box .login-socialmedia .googleplus,
+body > .wrapper > header .navbar-second .login #login-box .login-socialmedia .googleplus {
   background: #F40011 ;
   width: 49%;
 }
-body > header .navbar-second .login a {
+body > header .navbar-second .login a,
+body > .wrapper > header .navbar-second .login a {
   color: #fff;
 }
 /*----/ $BODY */
+body {
+  min-height: 100%;
+  position: relative;
+}
 body h1,
 body h2,
 body h3,
@@ -430,6 +475,9 @@ body h4,
 body h5,
 body h6 {
   font-weight: normal;
+}
+body.backend {
+  padding-bottom: 40px;
 }
 body.page .page-header {
   padding-bottom: 0px;
@@ -686,9 +734,48 @@ body.page .list-description .caption-item {
 .media-page .media-download {
   margin-bottom: 20px;
 }
+/*----/----/ $BACKEND */
+/*----/----/----/ $CREATE EVENT */
+.backend-wizard #event-wizard .wizard-nav {
+  margin-bottom: 0;
+  min-height: 0;
+  border: none;
+}
+.backend-wizard #event-wizard .wizard-nav li {
+  margin-left: -1px;
+}
+.backend-wizard #event-wizard .wizard-nav li.active a {
+  background: none;
+  color: #000;
+}
+.backend-wizard #event-wizard .wizard-nav li .border-circle {
+  height: 30px;
+  padding: 0px;
+  width: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  line-height: 1.4;
+  text-align: center;
+}
+.backend-wizard #event-wizard .wizard-nav li a {
+  font-size: 15px;
+  text-transform: uppercase;
+  border-bottom: none;
+}
+.backend-wizard #event-wizard .tab-content {
+  padding: 20px 20px;
+  border: 1px solid #000;
+}
 /*----/ $FOOTER */
 body > footer {
   text-transform: uppercase;
+}
+body > footer.back-end {
+  height: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 body > footer a {
   color: #fff;

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/vitamin.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/gs-slidenav.css"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="js/martadero.js"></script>
+</head>
+<body class="page backend backend-wizard">
+    <div class="wrapper">
+        <header>
+            <div class="container-fluid navbar-second no-padding-right-md ">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1>
+                        <span class="visually-hidden">mARTadero</span>
+                        <a href="../" class="navbar-brand"><img src="images/logo-martadero.png" alt=""/></a>
+                    </h1>
+                </div>
+                <nav id="bs-navbar" class="collapse navbar-collapse no-padding-right-md">
+                    <h2 class="visually-hidden">Menú de navegación</h2>
+                    <div class="login pull-right text-center">
+                        <figure class="avatar">
+                            <img src="images/avatar.jpeg" alt="Nombre de usuario" class="img-circle img-responsive"/>
+                        </figure>
+                        <div class="user-name" id="login">
+                            <a href="#" >Nombre de usuario</a>
+                        </div>
+                        <div id="login-box" class="user-menu">
+                            <ul class="list-unstyled user-options">
+                                <li>
+                                    <a href=""><i class="fa fa-wrench width-10-md"></i> <span class="width-90-md">Administrador digital</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-edit width-10-md"></i> <span class="width-90-md">Editar perfil</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-cog width-10-md"></i> <span class="width-90-md">Configuración</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-power-off width-10-md"></i> <span class="width-90-md">Salir</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav  navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu submenu-black">
+                                <li><a href="#">Option</a></li>
+                                <li><a href="#">Option</a></li>
+                                <li><a href="#">Option</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu submenu-black">
+                                <li><a href="#">Option</a></li>
+                                <li><a href="#">Option</a></li>
+                                <li><a href="#">Option</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span></a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        <div class="container position-relative content">
+            <main class="row">
+                <div class="col-md-12">
+                    <header class="page-header">
+                        <h2 class="no-margin-top title-page">
+                            <i class="glyphicon glyphicon-menu-right border-circle"></i> Crear evento
+                        </h2>
+                    </header>
+
+                    <div id="event-wizard">
+                        <div class="navbar wizard-nav">
+                            <div class="navbar-inner">
+                                <ul>
+                                    <li><a href="#tab1" data-toggle="tab" class="btn"><span class="border-circle">1</span> Sala</a></li>
+                                    <li><a href="#tab2" data-toggle="tab" class="btn"><span class="border-circle">2</span>Dias/Horario</a></li>
+                                    <li><a href="#tab3" data-toggle="tab" class="btn"><span class="border-circle">3</span>Equipos/Accesorios</a></li>
+                                    <li><a href="#tab4" data-toggle="tab" class="btn"><span class="border-circle">4</span>Información</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane" id="tab1">
+                                <div class="row">
+                                    <div class="col-md-6">sadfsa</div>
+                                    <div class="col-md-6">
+                                        <form action="">
+                                            <div class="row margin-bottom-xs">
+                                                <div class="col-md-3 ">
+                                                    <label for="">Label </label>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <input type="text" class="form-control"/>
+                                                </div>
+                                            </div>
+                                            <div class="row margin-bottom-xs">
+                                                <div class="col-md-3">
+                                                    <label for="">Label </label>
+                                                </div>
+                                                <div class="col-md-9 ">
+                                                    <select name="" id="" class="form-control">
+                                                        <option value="">Option 1</option>
+                                                        <option value="">Option 2</option>
+                                                        <option value="">Option 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row margin-bottom-xs">
+                                                <div class="col-md-3 ">
+                                                    <label for="">Label</label>
+                                                </div>
+                                                <div class="col-md-9 ">
+                                                    <input type="text" class="form-control"/>
+                                                </div>
+                                            </div>
+                                            <div class="row margin-bottom-xs">
+                                                <div class="col-md-4">
+                                                    <input type="radio" name="1">Dias sueltos
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <input type="radio" name="2">Dias continuos
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <input type="radio" name="3">ciclos
+                                                </div>
+                                            </div>
+                                            <div class="row margin-bottom-xs">
+                                                <div class="col-md-12">
+                                                    Del <input type="text"/> Al <input type="text"/> Tarde
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab2">
+                                <p>
+                                    <input type='text' name='name' id='name' placeholder='Enter Your Name'>
+                                </p>
+                            </div>
+                            <div class="tab-pane" id="tab3">
+                                3
+                            </div>
+                            <div class="tab-pane" id="tab4">
+                                4
+                            </div>
+                            <ul class="pager wizard">
+                                <li class="previous first" style="display:none;"><a href="#">First</a></li>
+                                <li class="previous"><a href="#">Previous</a></li>
+                                <li class="next last" style="display:none;"><a href="#">Last</a></li>
+                                <li class="next"><a href="#">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+
+    </div>
+    <footer class="margin-top-md footer-page back-end">
+        <div class="container">
+            <div class="row last">
+                <div class="col-md-6">
+                    <ul class="list-inline list-unstyled text-left text-center-xs no-margin">
+                        <li >
+                            Proyecto generado por <a href="http://www.martadero.org/arte-cultura/quienes_somos.html" title="NADA"><strong>NADA</strong></a> <a href="http://www.martadero.org/arte-cultura/quienes_somos.html"><img src="images/logo_nada_web.jpg" alt="NADA" title="NADA" height="26" width="18" /></a> <span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                        </li>
+                        <li>
+                            Gestionado por <a href="http://www.fundacionimagen.org" title="Fundación Imagen" target="_blank"><strong>FundaciónImagen</strong></a> <a href="http://www.fundacionimagen.org" target="_blank"><img src="images/logo_fi_web.jpg" alt="Fundación Imagen" title="Fundación Imagen"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-right copying text-center-xs">
+                    comparte los contenidos de esta página libremente <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" class="margin-left-md-sm" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $('#event-wizard').bootstrapWizard({onNext: function(tab, navigation, index) {
+                if(index==2) {
+                    // Make sure we entered the name
+                    if(!$('#name').val()) {
+                        alert('You must enter your name');
+                        $('#name').focus();
+                        return false;
+                    }
+                }
+            }, onTabShow: function(tab, navigation, index) {
+                var $total = navigation.find('li').length;
+                var $current = index+1;
+                var $percent = ($current/$total) * 100;
+                $('#event-wizard').find('.bar').css({width:$percent+'%'});
+            }});
+        });
+    </script>
+</body>
+</html>
