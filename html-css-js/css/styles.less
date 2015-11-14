@@ -161,10 +161,14 @@
  border-radius: 0 !important;
  color:#000;
  padding: 5px 7px;
- &.white {
-  border-color:#fff;
-  color: #fff;
- }
+}
+.white {
+ border-color:#fff;
+ color: #fff;
+}
+.black {
+ color: #fff;
+ background: #000;
 }
 
 .btn-md {
@@ -522,6 +526,11 @@
     }
    }
   }
+  .pagination {
+   a {
+    color: #000;
+   }
+  }
  }
  main {
 
@@ -792,6 +801,58 @@
 
 
 /*----/----/ $BACKEND */
+.backend {
+ a.label {
+
+ }
+ .btn {
+  border-radius: 3px !important;
+ }
+ table {
+  &.table-listitems {
+   a {
+    color:#000;
+    &:hover,
+    &:focus {
+     opacity: 0.7;
+    }
+   }
+   a.label {
+    color: #fff;
+    line-height: 1.5;
+    padding-top: 6px;
+   }
+   th {
+    border-top: 0;
+    border-bottom: 2px solid #ddd;;
+   }
+   .item-name {
+    font-family: "HelveticaBd";
+   }
+   .option-list {
+    a {
+     color: #fff;
+     display: inline-block;
+     text-align: center;
+     padding-top: 3px;
+     &.delete:hover {
+      opacity: 1;
+      background: #d9534f;
+      border-color: #d9534f;
+     }
+     &.edit:hover {
+      opacity: 1;
+      background: #337ab7;
+      border-color: #337ab7;
+     }
+    }
+   }
+  }
+ }
+
+}
+
+
 /*----/----/----/ $CREATE EVENT */
 .backend-wizard {
  #event-wizard {
@@ -803,7 +864,8 @@
      margin-left:-1px;
      &.active a {
       background: none;
-      color: #000;
+      color: #000
+     ;
      }
      .border-circle {
       height: 30px;

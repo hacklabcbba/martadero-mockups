@@ -469,8 +469,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [class*="width-"] {
-    display:inline-block ;
-    margin-right: -5px;
+    float:left;
 }
 
 .width-5 {
@@ -1127,7 +1126,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
     .text-left-md {
         text-align: left;
     }

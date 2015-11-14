@@ -132,9 +132,13 @@ input.white {
   color: #000;
   padding: 5px 7px;
 }
-.btn.white {
+.white {
   border-color: #fff;
   color: #fff;
+}
+.black {
+  color: #fff;
+  background: #000;
 }
 .btn-md {
   padding: 10px 15px;
@@ -505,6 +509,9 @@ body.page .list-description .caption-item {
   font-weight: bold;
   font-size: 14px;
 }
+body .pagination a {
+  color: #000;
+}
 /*----/----/ $HOME */
 .home main .events-container .menu-categories {
   position: relative;
@@ -735,6 +742,44 @@ body.page .list-description .caption-item {
   margin-bottom: 20px;
 }
 /*----/----/ $BACKEND */
+.backend .btn {
+  border-radius: 3px !important;
+}
+.backend table.table-listitems a {
+  color: #000;
+}
+.backend table.table-listitems a:hover,
+.backend table.table-listitems a:focus {
+  opacity: 0.7;
+}
+.backend table.table-listitems a.label {
+  color: #fff;
+  line-height: 1.5;
+  padding-top: 6px;
+}
+.backend table.table-listitems th {
+  border-top: 0;
+  border-bottom: 2px solid #ddd;
+}
+.backend table.table-listitems .item-name {
+  font-family: "HelveticaBd";
+}
+.backend table.table-listitems .option-list a {
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  padding-top: 3px;
+}
+.backend table.table-listitems .option-list a.delete:hover {
+  opacity: 1;
+  background: #d9534f;
+  border-color: #d9534f;
+}
+.backend table.table-listitems .option-list a.edit:hover {
+  opacity: 1;
+  background: #337ab7;
+  border-color: #337ab7;
+}
 /*----/----/----/ $CREATE EVENT */
 .backend-wizard #event-wizard .wizard-nav {
   margin-bottom: 0;
@@ -746,7 +791,8 @@ body.page .list-description .caption-item {
 }
 .backend-wizard #event-wizard .wizard-nav li.active a {
   background: none;
-  color: #000;
+  color: #000
+     ;
 }
 .backend-wizard #event-wizard .wizard-nav li .border-circle {
   height: 30px;

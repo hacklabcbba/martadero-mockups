@@ -36,7 +36,7 @@
                             <img src="images/avatar.jpeg" alt="Nombre de usuario" class="img-circle img-responsive"/>
                         </figure>
                         <div class="user-name" id="login">
-                            <a href="#" >Nombre de usuario</a>
+                            <a href="#" >Username</a>
                         </div>
                         <div id="login-box" class="user-menu">
                             <ul class="list-unstyled user-options">
@@ -103,97 +103,103 @@
         <div class="container position-relative content">
             <main class="row">
                 <div class="col-md-12">
-                    <header class="page-header">
-                        <h2 class="no-margin-top title-page">
-                            <i class="glyphicon glyphicon-menu-right border-circle"></i> Create event
+                    <header class="page-header row">
+                        <h2 class="no-margin-top title-page col-md-7">
+                            <i class="glyphicon glyphicon-menu-right border-circle"></i>Item list
                         </h2>
-                    </header>
-
-                    <div id="event-wizard">
-                        <div class="navbar wizard-nav">
-                            <div class="navbar-inner">
-                                <ul>
-                                    <li class="width-25-md"><a href="#tab1" data-toggle="tab" class="btn"><span class="border-circle">1</span> Sala</a></li>
-                                    <li class="width-25-md"><a href="#tab2" data-toggle="tab" class="btn"><span class="border-circle">2</span>Dias/Horario</a></li>
-                                    <li class="width-25-md"><a href="#tab3" data-toggle="tab" class="btn"><span class="border-circle">3</span>Equipos/Accesorios</a></li>
-                                    <li class="width-25-md"><a href="#tab4" data-toggle="tab" class="btn"><span class="border-circle">4</span>Información</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="tab-content">
-                            <div class="tab-pane" id="tab1">
-                                <div class="row">
-                                    <div class="col-md-6">sadfsa</div>
-                                    <div class="col-md-6">
-                                        <form action="">
-                                            <div class="row margin-bottom-xs">
-                                                <div class="col-md-3 ">
-                                                    <label for="">Label </label>
-                                                </div>
-                                                <div class="col-md-9">
-                                                    <input type="text" class="form-control"/>
-                                                </div>
-                                            </div>
-                                            <div class="row margin-bottom-xs">
-                                                <div class="col-md-3">
-                                                    <label for="">Label </label>
-                                                </div>
-                                                <div class="col-md-9 ">
-                                                    <select name="" id="" class="form-control">
-                                                        <option value="">Option 1</option>
-                                                        <option value="">Option 2</option>
-                                                        <option value="">Option 2</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row margin-bottom-xs">
-                                                <div class="col-md-3 ">
-                                                    <label for="">Label</label>
-                                                </div>
-                                                <div class="col-md-9 ">
-                                                    <input type="text" class="form-control"/>
-                                                </div>
-                                            </div>
-                                            <div class="row margin-bottom-xs">
-                                                <div class="col-md-4">
-                                                    <input type="radio" name="1">Dias sueltos
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <input type="radio" name="2">Dias continuos
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <input type="radio" name="3">ciclos
-                                                </div>
-                                            </div>
-                                            <div class="row margin-bottom-xs">
-                                                <div class="col-md-12">
-                                                    Del <input type="text"/> Al <input type="text"/> Tarde
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
+                        <ul class="list-unstyled list-inline col-md-5 text-right-md">
+                            <li>
+                                <a href="#" class="btn black">New</a>
+                            </li>
+                            <li><a href="#" class="btn ">Edit</a></li>
+                            <li><a href="#" class="btn ">Delete</a></li>
+                            <li>
+                                <div class="btn-group" role="group">
+                                    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Status
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Publish</a></li>
+                                        <li><a href="#">Unpublish</a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="tab-pane" id="tab2">
-                                <p>
-                                    <input type='text' name='name' id='name' placeholder='Enter Your Name'>
-                                </p>
-                            </div>
-                            <div class="tab-pane" id="tab3">
-                                3
-                            </div>
-                            <div class="tab-pane" id="tab4">
-                                4
-                            </div>
-                            <ul class="pager wizard">
-                                <li class="previous first" style="display:none;"><a href="#">First</a></li>
-                                <li class="previous"><a href="#">Previous</a></li>
-                                <li class="next last" style="display:none;"><a href="#">Last</a></li>
-                                <li class="next"><a href="#">Next</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                            </li>
+                        </ul>
+                    </header>
+                    <div>
+                        <table class="table table-listitems">
+                            <tr>
+                                <th class="text-center"><input type="checkbox"/></th>
+                                <th class="text-center">#</th>
+                                <th>Item</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center">Options</th>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <input type="checkbox"/>
+                                </td>
+                                <td class="text-center">
+                                    1
+                                </td>
+                                <td>
+                                    <a href="#" class="item-name">Curabitur condimentum est vitae dignissim feugiat.</a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="#" class="label label-success">Publish</a>
+                                </td>
+                                <td>
+                                    <ul class="list-unstyled list-inline option-list text-center">
+                                        <li><a href="#" class="black border-circle delete"><i class="fa fa-trash"></i><span class="hide">Editar</span></a></li>
+                                        <li><a href="#" class="black border-circle edit"><i class="fa fa-pencil"></i></a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <input type="checkbox"/>
+                                </td>
+                                <td class="text-center">
+                                    2
+                                </td>
+                                <td>
+                                    <a href="#" class="item-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="#" class="label label-danger">Unpublish</a>
+                                </td>
+                                <td>
+                                    <ul class="list-unstyled list-inline option-list text-center">
+                                        <li><a href="#" class="black border-circle delete"><i class="fa fa-trash"></i><span class="hide">Edit</span></a></li>
+                                        <li><a href="#" class="black border-circle edit"><i class="fa fa-pencil"></i></a></li>
+                                    </ul>
+                                </td>
+                            </tr>
 
+                        </table>
+                    </div>
+                    <div>
+                        <nav class="text-center ">
+                            <ul class="pagination pagination-lg">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </main>
         </div>
