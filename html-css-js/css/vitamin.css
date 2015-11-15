@@ -47,9 +47,7 @@ body {
     /*-ms-backface-visibility: hidden;*/
 }
 
-html, body{
-    height: 100%;
-}
+
 
 a:hover,
 a:focus {
@@ -187,73 +185,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*----*----*----* $BOX MODEL */
-
-.no-padding-xs {
-    padding: 0;
-}
-
-.no-padding-top-xs {
-    padding-top: 0;
-}
-
-.no-padding-right-xs {
-    padding-right: 0;
-}
-
-.no-padding-bottom-xs {
-    padding-bottom: 0;
-}
-
-.no-padding-left-xs {
-    padding-left: 0;
-}
-
-.padding-top-xs-xs {
-    padding-top: 15px;
-}
-
-.padding-top-xs-sm {
-    padding-top: 30px;
-}
-
-.padding-top-xs-md {
-    padding-top: 60px;
-}
-
-.padding-right-xs-xs {
-    padding-right: 15px;
-}
-
-.padding-right-xs-sm {
-    padding-right: 30px;
-}
-
-.padding-right-xs-md {
-    padding-right: 60px;
-}
-
-.padding-bottom-xs-xs {
-    padding-bottom: 15px;
-}
-
-.padding-bottom-xs-sm {
-    padding-bottom: 30px;
-}
-
-.padding-bottom-xs-md {
-    padding-bottom: 60px;
-}
-
-.padding-left-xs-xs {
-    padding-left: 15px;
-}
-
-.padding-left-xs-sm {
-    padding-left: 30px;
-}
-
-.padding-left-xs-md {
-    padding-left: 60px;
+.padding-xs {
+    padding: 15px;
 }
 
 .no-padding {
@@ -330,6 +263,81 @@ h1, h2, h3, h4, h5, h6 {
 .margin-bottom-xs {
     margin-bottom: 15px;
 }
+
+@media (max-width:767px ) {
+    .no-padding-xs {
+        padding: 0;
+    }
+
+    .no-padding-top-xs {
+        padding-top: 0;
+    }
+
+    .no-padding-right-xs {
+        padding-right: 0;
+    }
+
+    .no-padding-bottom-xs {
+        padding-bottom: 0;
+    }
+
+    .no-padding-left-xs {
+        padding-left: 0;
+    }
+
+    .padding-top-xs-xs {
+        padding-top: 15px;
+    }
+    .padding-top-xs-sm {
+        padding-top: 30px;
+    }
+
+    .padding-top-xs-md {
+        padding-top: 60px;
+    }
+
+    .padding-right-xs-xs {
+        padding-right: 15px;
+    }
+
+    .padding-right-xs-sm {
+        padding-right: 30px;
+    }
+
+    .padding-right-xs-md {
+        padding-right: 60px;
+    }
+
+    .padding-bottom-xs-xs {
+        padding-bottom: 15px;
+    }
+
+    .padding-bottom-xs-sm {
+        padding-bottom: 30px;
+    }
+
+    .padding-bottom-xs-md {
+        padding-bottom: 60px;
+    }
+
+    .padding-left-xs-xs {
+        padding-left: 15px;
+    }
+
+    .padding-left-xs-sm {
+        padding-left: 30px;
+    }
+
+    .padding-left-xs-md {
+        padding-left: 60px;
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+
+}
+
+
 
 .no-margin {
     margin: 0;

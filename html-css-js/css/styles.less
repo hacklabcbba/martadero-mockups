@@ -174,6 +174,96 @@
 .btn-md {
  padding: 10px 15px;
 }
+/*----/----/ $FORMS */
+ textarea.form-control {
+  border-color: #000;
+ }
+ .form-group {
+  &.correct,
+  &.error {
+   .input {
+    &:after {
+     font-family: "FontAwesome";
+     position: absolute;
+     right: 25px;
+     top: 8px;
+     font-size: 20px;
+    }
+   }
+  }
+  &.error {
+   color: #EE5757;
+   input[type="text"],
+   select,
+   textarea {
+    border-color: #EE5757 !important;
+    color: #EE5757;
+    padding-right: 30px;
+   }
+   .input {
+    &:after {
+     content: "\f00d";
+    }
+   }
+  }
+  &.correct {
+   color: #5cb85c;
+   input[type="text"],
+   select,
+   textarea {
+    border-color: #5cb85c !important;
+    color: #5cb85c;
+    padding-right: 30px;
+   }
+   .input {
+    &:after {
+     content: "\f00c";
+    }
+   }
+  }
+  .select {
+   overflow: hidden;
+   &:after {
+    font-family: "FontAwesome";
+    content: "\f107";
+    position: absolute;
+    right: 25px;
+    top: 5px;
+    font-size: 25px;
+   }
+   select {
+    width: 110%;
+   }
+  }
+  .control-label {
+   text-align: left;
+   font-weight: normal;
+   padding-bottom: 0;
+   height: auto;
+   text-transform: uppercase;
+  }
+  .form-control {
+   border-left: none;
+   border-top: none;
+   border-right: none;
+   border-bottom: 1px solid #000;
+   box-shadow: none;
+   &:focus {
+    border-color: #000 !important;
+    color: #000 !important;;
+   }
+  }
+  textarea.form-control,
+  .multiselect select {
+   border: 1px solid #000;
+   font-size: 16px;
+  }
+  .input-lg {
+   padding: 0 5px;
+   height: 40px;
+  }
+ }
+
 /*----/----/ $MENUS */
 .submenu-black {
  background: #000;
@@ -239,7 +329,7 @@
 }
 /*----/----/----/ $FORMS */
 .form-control {
- border: 1px solid #222;
+ border: 1px solid #C0C0C0;
  border-radius: 0;
 }
 
@@ -496,6 +586,20 @@
   }
   &.page {
    .wrapper {
+   }
+   .notifications {
+    .bg-danger {
+     border-bottom: 3px solid #f79e9e;
+     color: #d55c5c;
+    }
+    .bg-success {
+     border-bottom: 3px solid #7ec58c;
+     color: #5a8a63;
+    }
+    .bg-warning {
+     border-bottom: 3px solid #ede99d;
+     color: #a8a342;
+    }
    }
    .page-header {
     padding-bottom: 0px;
@@ -803,10 +907,11 @@
 /*----/----/ $BACKEND */
 .backend {
  a.label {
-
  }
- .btn {
-  border-radius: 3px !important;
+ .btn.black {
+  &:hover {
+   color: #fff;
+  }
  }
  table {
   &.table-listitems {
@@ -860,12 +965,21 @@
    margin-bottom: 0;
    min-height: 0;
    border: none;
-    li {
-     margin-left:-1px;
-     &.active a {
+   li {
+     background: #ededed;
+     margin-left:0px;
+     text-align: center;
+     border-left: 1px solid #9d9d9d;
+     &:first-child {
+      border-left: none;
+     }
+     &.active {
       background: none;
-      color: #000
-     ;
+      color: #000;
+      a {
+       background: none;
+       color: #000;
+      }
      }
      .border-circle {
       height: 30px;
@@ -877,18 +991,46 @@
       text-align: center;
      }
      a {
+      color: #000;
       font-size: 15px;
       text-transform: uppercase;
       border-bottom: none;
+      padding: 20px;
      }
     }
   }
   .tab-content {
-   padding: 20px 20px;
-   border: 1px solid #000;
+   padding: 50px 20px;
    form {
-
+    input {
+     &:after {
+      content: "X";
+      color: #EE5757;
+      position: absolute;
+      right: 0;
+     }
+    }
    }
+  }
+ }
+ .pager li {
+  &.disabled {
+   a {
+    color: #777;
+   }
+  }
+  > a {
+   border: none;
+   color:#000;
+   font-size: 20px;
+   text-transform: uppercase;
+   &:hover,
+   &:focus {
+    background: none;
+   }
+  }
+  i {
+   top:3px;
   }
  }
 }
@@ -971,8 +1113,23 @@ body > footer {
   width: 100%;
   top: -100px;
   li {
-   background: #ff0000;
    padding: 0;
+   background-size: 100% auto !important;
+   &:first-child {
+    background: url("../images/eventos.jpg") no-repeat;
+   }
+   &:nth-child(2){
+    background: url("../images/blog.jpg") no-repeat;
+   }
+   &:nth-child(3){
+    background: url("../images/servicios.jpg") no-repeat;
+   }
+   &:last-child {
+    background: url("../images/espacio.jpg") no-repeat;
+   }
+   &:hover {
+    opacity: 0.9;
+   }
   }
   a {
    color: #fff;

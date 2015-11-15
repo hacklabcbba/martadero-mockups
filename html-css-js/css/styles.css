@@ -143,6 +143,85 @@ input.white {
 .btn-md {
   padding: 10px 15px;
 }
+/*----/----/ $FORMS */
+textarea.form-control {
+  border-color: #000;
+}
+.form-group.correct .input:after,
+.form-group.error .input:after {
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 25px;
+  top: 8px;
+  font-size: 20px;
+}
+.form-group.error {
+  color: #EE5757;
+}
+.form-group.error input[type="text"],
+.form-group.error select,
+.form-group.error textarea {
+  border-color: #EE5757 !important;
+  color: #EE5757;
+  padding-right: 30px;
+}
+.form-group.error .input:after {
+  content: "\f00d";
+}
+.form-group.correct {
+  color: #5cb85c;
+}
+.form-group.correct input[type="text"],
+.form-group.correct select,
+.form-group.correct textarea {
+  border-color: #5cb85c !important;
+  color: #5cb85c;
+  padding-right: 30px;
+}
+.form-group.correct .input:after {
+  content: "\f00c";
+}
+.form-group .select {
+  overflow: hidden;
+}
+.form-group .select:after {
+  font-family: "FontAwesome";
+  content: "\f107";
+  position: absolute;
+  right: 25px;
+  top: 5px;
+  font-size: 25px;
+}
+.form-group .select select {
+  width: 110%;
+}
+.form-group .control-label {
+  text-align: left;
+  font-weight: normal;
+  padding-bottom: 0;
+  height: auto;
+  text-transform: uppercase;
+}
+.form-group .form-control {
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #000;
+  box-shadow: none;
+}
+.form-group .form-control:focus {
+  border-color: #000 !important;
+  color: #000 !important;
+}
+.form-group textarea.form-control,
+.form-group .multiselect select {
+  border: 1px solid #000;
+  font-size: 16px;
+}
+.form-group .input-lg {
+  padding: 0 5px;
+  height: 40px;
+}
 /*----/----/ $MENUS */
 .submenu-black {
   background: #000;
@@ -199,7 +278,7 @@ input.white {
 }
 /*----/----/----/ $FORMS */
 .form-control {
-  border: 1px solid #222;
+  border: 1px solid #C0C0C0;
   border-radius: 0;
 }
 /*----/----/----/ $JAVASCRIPT-COMPONENTS */
@@ -483,6 +562,18 @@ body h6 {
 body.backend {
   padding-bottom: 40px;
 }
+body.page .notifications .bg-danger {
+  border-bottom: 3px solid #f79e9e;
+  color: #d55c5c;
+}
+body.page .notifications .bg-success {
+  border-bottom: 3px solid #7ec58c;
+  color: #5a8a63;
+}
+body.page .notifications .bg-warning {
+  border-bottom: 3px solid #ede99d;
+  color: #a8a342;
+}
 body.page .page-header {
   padding-bottom: 0px;
   margin: 0px 0 20px 0;
@@ -742,8 +833,8 @@ body .pagination a {
   margin-bottom: 20px;
 }
 /*----/----/ $BACKEND */
-.backend .btn {
-  border-radius: 3px !important;
+.backend .btn.black:hover {
+  color: #fff;
 }
 .backend table.table-listitems a {
   color: #000;
@@ -787,12 +878,21 @@ body .pagination a {
   border: none;
 }
 .backend-wizard #event-wizard .wizard-nav li {
-  margin-left: -1px;
+  background: #ededed;
+  margin-left: 0px;
+  text-align: center;
+  border-left: 1px solid #9d9d9d;
+}
+.backend-wizard #event-wizard .wizard-nav li:first-child {
+  border-left: none;
+}
+.backend-wizard #event-wizard .wizard-nav li.active {
+  background: none;
+  color: #000;
 }
 .backend-wizard #event-wizard .wizard-nav li.active a {
   background: none;
-  color: #000
-     ;
+  color: #000;
 }
 .backend-wizard #event-wizard .wizard-nav li .border-circle {
   height: 30px;
@@ -804,13 +904,36 @@ body .pagination a {
   text-align: center;
 }
 .backend-wizard #event-wizard .wizard-nav li a {
+  color: #000;
   font-size: 15px;
   text-transform: uppercase;
   border-bottom: none;
+  padding: 20px;
 }
 .backend-wizard #event-wizard .tab-content {
-  padding: 20px 20px;
-  border: 1px solid #000;
+  padding: 50px 20px;
+}
+.backend-wizard #event-wizard .tab-content form input:after {
+  content: "X";
+  color: #EE5757;
+  position: absolute;
+  right: 0;
+}
+.backend-wizard .pager li.disabled a {
+  color: #777;
+}
+.backend-wizard .pager li > a {
+  border: none;
+  color: #000;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.backend-wizard .pager li > a:hover,
+.backend-wizard .pager li > a:focus {
+  background: none;
+}
+.backend-wizard .pager li i {
+  top: 3px;
 }
 /*----/ $FOOTER */
 body > footer {
@@ -891,8 +1014,23 @@ body > footer .footer-buttons {
   top: -100px;
 }
 body > footer .footer-buttons li {
-  background: #ff0000;
   padding: 0;
+  background-size: 100% auto !important;
+}
+body > footer .footer-buttons li:first-child {
+  background: url("../images/eventos.jpg") no-repeat;
+}
+body > footer .footer-buttons li:nth-child(2) {
+  background: url("../images/blog.jpg") no-repeat;
+}
+body > footer .footer-buttons li:nth-child(3) {
+  background: url("../images/servicios.jpg") no-repeat;
+}
+body > footer .footer-buttons li:last-child {
+  background: url("../images/espacio.jpg") no-repeat;
+}
+body > footer .footer-buttons li:hover {
+  opacity: 0.9;
 }
 body > footer .footer-buttons a {
   color: #fff;

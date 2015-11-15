@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/vitamin.css"/>
+    <link rel="stylesheet" href="css/square/_all.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/gs-slidenav.css"/>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="js/icheck.min.js"></script>
     <script src="js/martadero.js"></script>
 </head>
 <body class="page backend backend-wizard">
@@ -103,6 +104,17 @@
         <div class="container position-relative content">
             <main class="row">
                 <div class="col-md-12">
+                    <div class="notifications margin-bottom-xs ">
+                        <div class="bg-danger padding-xs">
+                            <i class="fa fa-times"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </div>
+                        <div class="bg-warning padding-xs">
+                            <i class="fa fa-exclamation"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </div>
+                        <div class="bg-success padding-xs">
+                            <i class="fa fa-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </div>
+                    </div>
                     <header class="page-header">
                         <h2 class="no-margin-top title-page">
                             <i class="glyphicon glyphicon-menu-right border-circle"></i> Create event
@@ -113,10 +125,10 @@
                         <div class="navbar wizard-nav">
                             <div class="navbar-inner">
                                 <ul>
-                                    <li class="width-25-md"><a href="#tab1" data-toggle="tab" class="btn"><span class="border-circle">1</span> Sala</a></li>
-                                    <li class="width-25-md"><a href="#tab2" data-toggle="tab" class="btn"><span class="border-circle">2</span>Dias/Horario</a></li>
-                                    <li class="width-25-md"><a href="#tab3" data-toggle="tab" class="btn"><span class="border-circle">3</span>Equipos/Accesorios</a></li>
-                                    <li class="width-25-md"><a href="#tab4" data-toggle="tab" class="btn"><span class="border-circle">4</span>Información</a></li>
+                                    <li class="width-25-md"><a href="#tab1" data-toggle="tab" class="">Sala</a></li>
+                                    <li class="width-25-md"><a href="#tab2" data-toggle="tab" class="">Dias/Horario</a></li>
+                                    <li class="width-25-md"><a href="#tab3" data-toggle="tab" class="">Equipos/Accesorios</a></li>
+                                    <li class="width-25-md"><a href="#tab4" data-toggle="tab" class="">Información</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -125,50 +137,133 @@
                                 <div class="row">
                                     <div class="col-md-6">sadfsa</div>
                                     <div class="col-md-6">
-                                        <form action="">
-                                            <div class="row margin-bottom-xs">
-                                                <div class="col-md-3 ">
-                                                    <label for="">Label </label>
+                                        <form action="" class="">
+                                            <div class="form-horizontal">
+                                                <div class="form-group margin-bottom-xs">
+                                                    <label class="col-md-12 control-label ">Text</label>
+                                                    <div class="col-md-12"><input class="form-control input-lg" value="Some text value..." type="text"></div>
                                                 </div>
-                                                <div class="col-md-9">
-                                                    <input type="text" class="form-control"/>
+                                                <div class="form-group margin-bottom-xs error">
+                                                    <label class="col-md-12 control-label ">Text</label>
+                                                    <div class="col-md-12 input"><input class="form-control input-lg " value="Some text value..." type="text"></div>
+                                                </div>
+                                                <div class="form-group margin-bottom-xs correct">
+                                                    <label class="col-md-12 control-label ">Text</label>
+                                                    <div class="col-md-12 input"><input class="form-control input-lg " value="Some text value..." type="text"></div>
+                                                </div>
+                                                <div class="form-group margin-bottom-xs">
+                                                    <label class="col-md-12 control-label ">Select</label>
+                                                    <div class="col-md-12 ">
+                                                        <div class="input select">
+                                                            <select name="" id="" class="form-control input-lg">
+                                                                <option value="">1</option>
+                                                                <option value="">2</option>
+                                                                <option value="">3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group margin-bottom-xs ">
+                                                    <label class="col-md-12 control-label ">Select</label>
+                                                    <div class="col-md-12 input select">
+                                                        <div class="input select">
+                                                            <select name="" id="" class="form-control input-lg">
+                                                                <option value="">1</option>
+                                                                <option value="">2</option>
+                                                                <option value="">3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group margin-bottom-xs">
+                                                    <label class="col-md-12 control-label ">MultiSelect</label>
+                                                    <div class="col-md-12 input multiselect">
+                                                        <select multiple class="form-control">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox form-group ">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox form-group  ">
+                                                    <label>
+                                                        <input type="checkbox" value="" >
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox form-group   ">
+                                                    <label>
+                                                        <input type="checkbox" value="">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                    </label>
+                                                </div>
+                                                <div class="checkbox form-group ">
+                                                    <label>
+                                                        <input type="checkbox" value="" disabled>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                    </label>
+                                                </div>
+                                                <div class="radio form-group ">
+                                                    <label>
+                                                        <input type="radio" name="blankRadio" id="" value="option1" aria-label="...">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                    </label>
+                                                </div>
+                                                <div class="radio form-group  ">
+                                                    <label>
+                                                        <input type="radio" name="blankRadio" id="" value="option1" aria-label="...">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                    </label>
+                                                </div>
+                                                <div class="radio form-group  ">
+                                                    <label>
+                                                        <input type="radio" name="blankRadio" id="" value="option1" aria-label="...">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                                    </label>
+                                                </div>
+                                                <div class="form-group margin-bottom-xs margin-top-md-xs form-buttons">
+                                                    <div class="col-md-12">
+                                                        <a href="" class="btn black btn-lg">Enviar</a>
+                                                        <a href="" class="btn btn-lg">Cancelar</a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-12 control-label ">Textarea</label>
+                                                    <div class="col-md-12">
+                                                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group error">
+                                                    <label class="col-md-12 control-label ">Textarea</label>
+                                                    <div class="col-md-12">
+                                                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group correct">
+                                                    <label class="col-md-12 control-label ">Textarea</label>
+                                                    <div class="col-md-12">
+                                                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="row margin-bottom-xs">
-                                                <div class="col-md-3">
-                                                    <label for="">Label </label>
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
                                                 </div>
-                                                <div class="col-md-9 ">
-                                                    <select name="" id="" class="form-control">
-                                                        <option value="">Option 1</option>
-                                                        <option value="">Option 2</option>
-                                                        <option value="">Option 2</option>
-                                                    </select>
+                                                <div class="form-group">
+                                                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
                                                 </div>
-                                            </div>
-                                            <div class="row margin-bottom-xs">
-                                                <div class="col-md-3 ">
-                                                    <label for="">Label</label>
-                                                </div>
-                                                <div class="col-md-9 ">
-                                                    <input type="text" class="form-control"/>
-                                                </div>
-                                            </div>
-                                            <div class="row margin-bottom-xs">
-                                                <div class="col-md-4">
-                                                    <input type="radio" name="1">Dias sueltos
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <input type="radio" name="2">Dias continuos
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <input type="radio" name="3">ciclos
-                                                </div>
-                                            </div>
-                                            <div class="row margin-bottom-xs">
-                                                <div class="col-md-12">
-                                                    Del <input type="text"/> Al <input type="text"/> Tarde
-                                                </div>
+                                                <button type="submit" class="btn btn-default">Sign in</button>
                                             </div>
                                         </form>
                                     </div>
@@ -186,10 +281,10 @@
                                 4
                             </div>
                             <ul class="pager wizard">
-                                <li class="previous first" style="display:none;"><a href="#">First</a></li>
-                                <li class="previous"><a href="#">Previous</a></li>
+                                <li class="previous first" style="display:none;"><a href="#"><i class="glyphicon glyphicon-menu-left "></i> First</a></li>
+                                <li class="previous"><a href="#"><i class="glyphicon glyphicon-menu-left"></i> Previous </i></a></li>
                                 <li class="next last" style="display:none;"><a href="#">Last</a></li>
-                                <li class="next"><a href="#">Next</a></li>
+                                <li class="next"><a href="#">Next <i class="glyphicon glyphicon-menu-right"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -235,6 +330,11 @@
                 var $percent = ($current/$total) * 100;
                 $('#event-wizard').find('.bar').css({width:$percent+'%'});
             }});
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_square',
+                radioClass: 'iradio_square',
+                increaseArea: '20%' // optional
+            });
         });
     </script>
 </body>

@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/vitamin.css"/>
+    <link rel="stylesheet" href="css/square/_all.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
-    <link rel="stylesheet" href="css/gs-slidenav.css"/>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.bootstrap.wizard.min.js"></script>
+    <script src="js/icheck.min.js"></script>
     <script src="js/martadero.js"></script>
 </head>
 <body class="page backend backend-wizard">
@@ -224,23 +224,13 @@
             </div>
         </div>
     </footer>
-    <script>
-        $(document).ready(function() {
-            $('#event-wizard').bootstrapWizard({onNext: function(tab, navigation, index) {
-                if(index==2) {
-                    // Make sure we entered the name
-                    if(!$('#name').val()) {
-                        alert('You must enter your name');
-                        $('#name').focus();
-                        return false;
-                    }
-                }
-            }, onTabShow: function(tab, navigation, index) {
-                var $total = navigation.find('li').length;
-                var $current = index+1;
-                var $percent = ($current/$total) * 100;
-                $('#event-wizard').find('.bar').css({width:$percent+'%'});
-            }});
+        <script>
+        $(document).ready(function(){
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_square',
+                radioClass: 'iradio_square',
+                increaseArea: '20%' // optional
+            });
         });
     </script>
 </body>
