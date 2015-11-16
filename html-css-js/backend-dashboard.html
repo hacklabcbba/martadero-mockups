@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/vitamin.css"/>
+    <link rel="stylesheet" href="css/square/_all.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+    <script src="js/martadero.js"></script>
+</head>
+<body class="page backend dashboard">
+    <div class="wrapper">
+        <header>
+            <div class="container-fluid navbar-second no-padding-right-md ">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1>
+                        <span class="visually-hidden">mARTadero</span>
+                        <a href="../" class="navbar-brand"><img src="images/logo-martadero.png" alt=""/></a>
+                    </h1>
+                </div>
+                <nav id="bs-navbar" class="collapse navbar-collapse no-padding-right-md">
+                    <h2 class="visually-hidden">Menú de navegación</h2>
+                    <div class="login pull-right text-center">
+                        <figure class="avatar">
+                            <img src="images/avatar.jpeg" alt="Nombre de usuario" class="img-circle img-responsive"/>
+                        </figure>
+                        <div class="user-name" id="login">
+                            <a href="#" >Username</a>
+                        </div>
+                        <div id="login-box" class="user-menu">
+                            <ul class="list-unstyled user-options">
+                                <li>
+                                    <a href=""><i class="fa fa-wrench width-10-md"></i> <span class="width-90-md">Administrador digital</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-edit width-10-md"></i> <span class="width-90-md">Editar perfil</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-cog width-10-md"></i> <span class="width-90-md">Configuración</span></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-power-off width-10-md"></i> <span class="width-90-md">Salir</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav  navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu submenu-black">
+                                <li><a href="#">Option</a></li>
+                                <li><a href="#">Option</a></li>
+                                <li><a href="#">Option</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu submenu-black">
+                                <li><a href="#">Option</a></li>
+                                <li><a href="#">Option</a></li>
+                                <li><a href="#">Option</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                Backend option <span class="caret"></span></a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+        </header>
+        <div class="container-fluid position-relative no-padding-left content">
+            <main class="row">
+                <section class="col-md-2 dashboard-menu">
+                    <header>
+                        <h2 class="margin-left-md-xs dashboard-title">
+                            <i class="fa fa-gears"></i> Dashboard
+                        </h2>
+                    </header>
+                    <div class="navbar" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <span class="visible-xs navbar-brand">Sidebar menu</span>
+                        </div>
+                        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Menu Item 1</a></li>
+                                <li><a href="#">Menu Item 2</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Menu Item 4</a></li>
+                                <li><a href="#">Menu Item 5</a></li>
+                                <li><a href="#">Menu Item 6</a></li>
+                                <li><a href="#">Menu Item 7</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-10 boxes">
+                    <div class="row">
+                        <section class="col-md-6">
+                            <header>
+                                <h2>Last Events</h2>
+                            </header>
+                            <table class="table table-listitems">
+                                <tr>
+                                    <th class="">Event</th>
+                                    <th class="text-center">Status</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="item-name">Curabitur condimentum est vitae dignissim feugiat.</a>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="label label-success">Publish</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="item-name">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a>
+                                    </td>
+                                    <td class="text-center">
+                                        <span class="label label-danger">Unpublish</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <footer class="row">
+                                <div class="col-md-6">
+                                    <a href="#" class="btn black">Add event</a>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <a href="#">View all events</a>
+                                </div>
+                            </footer>
+                        </section>
+                        <section class="col-md-6">
+                            <header>
+                                <h2>Last users</h2>
+                            </header>
+                            <table class="table table-listitems table-listusers">
+                                <tr>
+                                    <th class="">User</th>
+                                    <th class="text-center">Register date</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="item-name"><img src="images/avatar.jpeg" class="img-circle" alt=""/>Username</a>
+                                    </td>
+                                    <td class="text-center">
+                                        12-12-2015
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="item-name"><img src="images/avatar.jpeg" class="img-circle" alt=""/>Username</a>
+                                    </td>
+                                    <td class="text-center">
+                                        12-12-2015
+                                    </td>
+                                </tr>
+                            </table>
+                            <footer class="row">
+                                <div class="col-md-12 text-right">
+                                    <a href="#">View all users</a>
+                                </div>
+                            </footer>
+                        </section>
+                        <section class="col-md-12">
+                            <header>
+                                <h2>Last comments</h2>
+                            </header>
+                            <ul class=" list-unstyled comments">
+                                <li class="row">
+                                    <div class="col-md-1"><img src="images/avatar.jpeg" class="img-circle img-responsive" alt=""/></div>
+                                    <div class="col-md-11">
+                                        <div class="width-50"><a href="#">Username </a></div>
+                                        <div class="width-50 text-right">12-12-2015</div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis erat eros, scelerisque eleifend lacus vestibulum id. Sed posuere, libero sed ullamcorper tincidunt, arcu mi lacinia nulla, id tristique risus purus at odio. Curabitur vulputate molestie dignissim. </div>
+                                </li>
+                                <li class="row">
+                                    <div class="col-md-1"><img src="images/avatar.jpeg" class="img-circle img-responsive" alt=""/></div>
+                                    <div class="col-md-11">
+                                        <div class="width-50"><a href="#">Username </a></div>
+                                        <div class="width-50 text-right">12-12-2015</div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis erat eros, scelerisque eleifend lacus vestibulum id. Sed posuere, libero sed ullamcorper tincidunt, arcu mi lacinia nulla, id tristique risus purus at odio. Curabitur vulputate molestie dignissim.
+                                    </div>
+                                </li>
+                                <li class="row">
+                                    <div class="col-md-1"><img src="images/avatar.jpeg" class="img-circle img-responsive" alt=""/></div>
+                                    <div class="col-md-11">
+                                        <div class="width-50"><a href="#">Username </a></div>
+                                        <div class="width-50 text-right">12-12-2015</div>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis erat eros, scelerisque eleifend lacus vestibulum id. Sed posuere, libero sed ullamcorper tincidunt, arcu mi lacinia nulla, id tristique risus purus at odio. Curabitur vulputate molestie dignissim.
+                                    </div>
+                                </li>
+                            </ul>
+                            <footer class="row">
+                                <div class="col-md-12 text-right">
+                                    <a href="#">View all comments</a>
+                                </div>
+                            </footer>
+                        </section>
+                        <section class="col-md-4">
+                            <header>
+                                <h2>Box</h2>
+                            </header>
+                            <table class="table table-listitems">
+                                <tr>
+                                    <th class="">User</th>
+                                    <th class="text-center">Register date</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="item-name">Username</a>
+                                    </td>
+                                    <td class="text-center">
+                                        12-12-2015
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="item-name">Username</a>
+                                    </td>
+                                    <td class="text-center">
+                                        12-12-2015
+                                    </td>
+                                </tr>
+                            </table>
+                            <footer class="row">
+                                <div class="col-md-12">
+                                </div>
+                            </footer>
+                        </section>
+                        <section class="col-md-4">
+                            <header>
+                                <h2>Box</h2>
+                            </header>
+                            <table class="table table-listitems">
+                                <tr>
+                                    <th class="">User</th>
+                                    <th class="text-center">Register date</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="item-name">Username</a>
+                                    </td>
+                                    <td class="text-center">
+                                        12-12-2015
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="item-name">Username</a>
+                                    </td>
+                                    <td class="text-center">
+                                        12-12-2015
+                                    </td>
+                                </tr>
+                            </table>
+                            <footer class="row">
+                                <div class="col-md-12">
+                                </div>
+                            </footer>
+                        </section>
+                        <section class="col-md-4">
+                            <header>
+                                <h2>Box</h2>
+                            </header>
+                            <table class="table table-listitems">
+                                <tr>
+                                    <th class="">User</th>
+                                    <th class="text-center">Register date</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="item-name">Username</a>
+                                    </td>
+                                    <td class="text-center">
+                                        12-12-2015
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#" class="item-name">Username</a>
+                                    </td>
+                                    <td class="text-center">
+                                        12-12-2015
+                                    </td>
+                                </tr>
+                            </table>
+                            <footer class="row">
+                                <div class="col-md-12">
+                                </div>
+                            </footer>
+                        </section>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+    </div>
+    <footer class="margin-top-md footer-page back-end">
+        <div class="container">
+            <div class="row last">
+                <div class="col-md-6">
+                    <ul class="list-inline list-unstyled text-left text-center-xs no-margin">
+                        <li >
+                            Proyecto generado por <a href="http://www.martadero.org/arte-cultura/quienes_somos.html" title="NADA"><strong>NADA</strong></a> <a href="http://www.martadero.org/arte-cultura/quienes_somos.html"><img src="images/logo_nada_web.jpg" alt="NADA" title="NADA" height="26" width="18" /></a> <span class="hidden-xs">&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                        </li>
+                        <li>
+                            Gestionado por <a href="http://www.fundacionimagen.org" title="Fundación Imagen" target="_blank"><strong>FundaciónImagen</strong></a> <a href="http://www.fundacionimagen.org" target="_blank"><img src="images/logo_fi_web.jpg" alt="Fundación Imagen" title="Fundación Imagen"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-right copying text-center-xs">
+                    comparte los contenidos de esta página libremente <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" class="margin-left-md-sm" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        <script>
+        $(document).ready(function(){
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_square',
+                radioClass: 'iradio_square',
+                increaseArea: '20%' // optional
+            });
+        });
+    </script>
+</body>
+</html>
