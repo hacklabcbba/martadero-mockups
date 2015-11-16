@@ -205,15 +205,30 @@ textarea.form-control {
   border-right: none;
   border-bottom: 1px solid #000;
   box-shadow: none;
+  font-size: 16px;
 }
 .form-group .form-control:focus {
   border-color: #000 !important;
   color: #000 !important;
 }
+.form-group .form-control + .input-group-addon {
+  bottom: 0;
+  right: 25px;
+}
 .form-group textarea.form-control,
 .form-group .multiselect select {
   border: 1px solid #000;
   font-size: 16px;
+}
+.form-group .input-group-addon {
+  position: absolute;
+  background: transparent none repeat scroll 0% 0%;
+  border: medium none;
+  font-size: 20px;
+  padding-left: 3px;
+}
+.form-group .input-group-addon + .form-control {
+  padding-left: 30px;
 }
 .form-group .input-lg {
   padding: 0 5px;
