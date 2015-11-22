@@ -11,7 +11,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/martadero.js"></script>
 </head>
-<body class="media-page page">
+<body class="blog-page blogpost-page page">
     <header>
         <div class="container-fluid navbar-black">
             <div class="navbar-header">
@@ -81,6 +81,7 @@
             <nav id="bs-navbar" class="collapse navbar-collapse no-padding-right-md">
                 <h2 class="visually-hidden">Menú de navegación</h2>
                 <div class="login pull-right text-center">
+                    <!--
                     <img src="images/login-ico.png" alt=""/>
                     <div class="title-login">
                         Reserva <br/>tu espacio
@@ -116,6 +117,29 @@
                                 <a href="#" class="btn login-button form-control">Crear cuenta</a>
                             </div>
                         </div>
+                    </div>
+                    -->
+                    <figure class="avatar">
+                        <img src="images/avatar.jpeg" alt="Nombre de usuario" class="img-circle img-responsive"/>
+                    </figure>
+                    <div class="user-name" id="login">
+                        <a href="#" >Nombre de usuario</a>
+                    </div>
+                    <div id="login-box" class="user-menu">
+                        <ul class="list-unstyled user-options">
+                            <li>
+                                <a href=""><i class="fa fa-wrench width-10-md"></i> <span class="width-90-md">Administrador digital</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-edit width-10-md"></i> <span class="width-90-md">Editar perfil</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-cog width-10-md"></i> <span class="width-90-md">Configuración</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-power-off width-10-md"></i> <span class="width-90-md">Salir</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <ul class="nav navbar-nav  navbar-right">
@@ -171,119 +195,161 @@
     <div class="container position-relative content">
         <main class="row">
             <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-6">
-                        <header class="page-header">
-                            <h2 class="no-margin-top title-page">
-                                <i class="glyphicon glyphicon-menu-right border-circle"></i> Media
-                            </h2>
-                            <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi congue dignissim facilisis. Nulla ornare at lorem et facilisis. Vestibulum sed maximus quam. Maecenas vehicula, odio vel suscipit viverra, orci lacus rutrum eros, quis laoreet leo odio sit amet ligula. Sed quis erat sapien. Sed auctor orci a magna volutpat, id sodales velit convallis. Donec aliquam ipsum mi, condimentum pharetra purus luctus quis. </p>
-                            </div>
-                        </header>
-                        <h3>Identidad</h3>
-                        <div class="row">
-                            <div class="col-md-6 media-download">
+                <header>
+                    <h2 class="no-margin-top title-page">
+                        <i class="glyphicon glyphicon-menu-right border-circle"></i> Blog
+                    </h2>
+                </header>
+                <div class="row margin-top-sm">
+                    <div class="col-md-8 main-content blog-articles">
+                        <article class="row blog-article">
+                            <div class="col-md-3">
                                 <figure>
-                                    <img src="images/Sample3.jpeg" class="img-responsive" alt=""/>
+                                    <img src=images/sample1.jpg alt="" class="img-responsive"/>
                                 </figure>
-                                <div class="text-center margin-top-xs">
-                                    <a href="#" class="btn width-70-md center-block no-float">Descargar</a>
-                                </div>
                             </div>
-                            <div class="col-md-6 media-download">
-                                <figure>
-                                    <img src="images/Sample3.jpeg" class="img-responsive" alt=""/>
-                                </figure>
-                                <div class="text-center margin-top-xs">
-                                    <a href="#" class="btn width-70-md center-block no-float">Descargar</a>
+                            <div class="col-md-9">
+                                <header>
+                                    <h3 class="title-article">7 miradas a la bienal de arte urbano</h3>
+                                    <ul class="list-unstyled list-inline postblog-date">
+                                        <li>
+                                           <span>Interaccion social</span> <span class="separator">|</span>
+                                        </li>
+                                        <li>
+                                            <span>Autor:</span>
+                                            <span>Interaccion social</span> <span class="separator">|</span>
+                                        </li>
+                                        <li>
+                                            <span>Fecha:</span>
+                                            <span>03 de noviembre</span>
+                                        </li>
+                                    </ul>
+                                </header>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper viverra orci, lacinia ornare augue tincidunt vel. Aliquam sodales tincidunt consectetur. Nulla egestas eros sit amet erat bibendum, ac volutpat tortor dictum. Nullam fermentum ornare suscipit. </p>
                                 </div>
-                            </div>
-                            <div class="col-md-6 media-download">
-                                <figure>
-                                    <img src="images/Sample3.jpeg" class="img-responsive" alt=""/>
-                                </figure>
-                                <div class="text-center margin-top-xs">
-                                    <a href="#" class="btn width-70-md center-block no-float">Descargar</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 media-download">
-                                <figure>
-                                    <img src="images/Sample3.jpeg" class="img-responsive" alt=""/>
-                                </figure>
-                                <div class="text-center margin-top-xs">
-                                    <a href="#" class="btn width-70-md center-block no-float">Descargar</a>
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Fuentes libres</h3>
-                        <div class="row">
-                            <div class="col-md-4 media-download">
-                                <div class="font-image">
-                                    Aa
-                                </div>
-                                <div class="text-center">
-                                    <a href="#" class="text-uppercase">Title font</a>
-                                    <a href="#" class="btn width-70-md center-block no-float margin-top-xs">Descargar</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 media-download">
-                                <div class="font-image">
-                                    Aa
-                                </div>
-                                <div class="text-center">
-                                    <a href="#" class="text-uppercase">Title font</a>
-                                    <a href="#" class="btn width-70-md center-block no-float margin-top-xs">Descargar</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 media-download">
-                                <div class="font-image">
-                                    Aa
-                                </div>
-                                <div class="text-center">
-                                    <a href="#" class="text-uppercase">Title font</a>
-                                    <a href="#" class="btn width-70-md center-block no-float margin-top-xs">Descargar</a>
-                                </div>
-                            </div>
 
-                        </div>
+                            </div>
+                        </article>
+                        <article class="row blog-article">
+                            <div class="col-md-3">
+                                <figure>
+                                    <img src=images/sample1.jpg alt="" class="img-responsive"/>
+                                </figure>
+                            </div>
+                            <div class="col-md-9">
+                                <header>
+                                    <h3 class="title-article">7 miradas a la bienal de arte urbano</h3>
+                                    <ul class="list-unstyled list-inline postblog-date">
+                                        <li>
+                                            <span>Interaccion social</span> <span class="separator">|</span>
+                                        </li>
+                                        <li>
+                                            <span>Autor:</span>
+                                            <span>Interaccion social</span> <span class="separator">|</span>
+                                        </li>
+                                        <li>
+                                            <span>Fecha:</span>
+                                            <span>03 de noviembre</span>
+                                        </li>
+                                    </ul>
+                                </header>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper viverra orci, lacinia ornare augue tincidunt vel. Aliquam sodales tincidunt consectetur. Nulla egestas eros sit amet erat bibendum, ac volutpat tortor dictum. Nullam fermentum ornare suscipit. </p>
+                                </div>
+
+                            </div>
+                        </article>
+                        <article class="row blog-article">
+                            <div class="col-md-3">
+                                <figure>
+                                    <img src=images/sample1.jpg alt="" class="img-responsive"/>
+                                </figure>
+                            </div>
+                            <div class="col-md-9">
+                                <header>
+                                    <h3 class="title-article">7 miradas a la bienal de arte urbano</h3>
+                                    <ul class="list-unstyled list-inline postblog-date">
+                                        <li>
+                                            <span>Interaccion social</span> <span class="separator">|</span>
+                                        </li>
+                                        <li>
+                                            <span>Autor:</span>
+                                            <span>Interaccion social</span> <span class="separator">|</span>
+                                        </li>
+                                        <li>
+                                            <span>Fecha:</span>
+                                            <span>03 de noviembre</span>
+                                        </li>
+                                    </ul>
+                                </header>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper viverra orci, lacinia ornare augue tincidunt vel. Aliquam sodales tincidunt consectetur. Nulla egestas eros sit amet erat bibendum, ac volutpat tortor dictum. Nullam fermentum ornare suscipit. </p>
+                                </div>
+
+                            </div>
+                        </article>
                     </div>
-                    <div class="col-md-6 books">
-                        <h3>
-                            Libros
-                        </h3>
-                        <section class="row">
-                            <div class="col-md-4 book">
-                                <figure class="text-center cover-book">
-                                    <img src="images/sample1.jpg" alt="" class=""/>
-                                </figure>
-                                <div class="text-center margin-top-xs">
-                                    <a href="#" class="btn width-70-md no-float center-block">Descargar</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 book">
-                                <figure class="text-center cover-book">
-                                    <img src="images/sample1.jpg" alt="" class=""/>
-                                </figure>
-                                <div class="text-center margin-top-xs">
-                                    <a href="#" class="btn width-70-md no-float center-block">Descargar</a>
-                                </div>
-                            </div>
-                            <div class="col-md-4 book">
-                                <figure class="text-center cover-book">
-                                    <img src="images/sample1.jpg" alt="" class=""/>
-                                </figure>
-                                <div class="text-center margin-top-xs">
-                                    <a href="#" class="btn width-70-md no-float center-block">Descargar</a>
-                                </div>
-
-                            </div>
+                    <div class="col-md-4 side">
+                        <section>
+                            <h3>Categorias</h3>
+                            <ul class="list-unstyled blog-categories">
+                                <li class="active item">
+                                    <a href="#">Categoria</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Item list</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Item list</a>
+                                </li>
+                                <li class="item">
+                                    <a href="#">Item list</a>
+                                </li>
+                            </ul>
                         </section>
-                        <h4 class="margin-top-sm">Sinopsis de la obra</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper viverra orci, lacinia ornare augue tincidunt vel. Aliquam sodales tincidunt consectetur. Nulla egestas eros sit amet erat bibendum, ac volutpat tortor dictum. Nullam fermentum ornare suscipit. Nullam mollis neque sed leo ultrices volutpat. Pellentesque ornare nisi vitae metus scelerisque pellentesque at vel metus. Praesent bibendum ex non risus scelerisque commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ornare quis justo nec bibendum. </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper viverra orci, lacinia ornare augue tincidunt vel. Aliquam sodales tincidunt consectetur. Nulla egestas eros sit amet erat bibendum, ac volutpat tortor dictum. Nullam fermentum ornare suscipit. Nullam mollis neque sed leo ultrices volutpat. Pellentesque ornare nisi vitae metus scelerisque pellentesque at vel metus. Praesent bibendum ex non risus scelerisque commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ornare quis justo nec bibendum. </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper viverra orci, lacinia ornare augue tincidunt vel. Aliquam sodales tincidunt consectetur. Nulla egestas eros sit amet erat bibendum, ac volutpat tortor dictum. Nullam fermentum ornare suscipit. Nullam mollis neque sed leo ultrices volutpat. Pellentesque ornare nisi vitae metus scelerisque pellentesque at vel metus. Praesent bibendum ex non risus scelerisque commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam ornare quis justo nec bibendum. </p>
-
+                        <section class="overflow-hidden">
+                            <h3>Suscribete a nuestra newspaper</h3>
+                            <form action="">
+                                <input type="email" class="form-control margin-bottom-xs"/>
+                                <a href="#" class="btn width-30-md text-uppercase">Reservar</a>
+                            </form>
+                        </section>
+                        <section class="overflow-hidden">
+                            <h3>Siguenos en redes sociales</h3>
+                            <ul class="list-unstyled list-inline">
+                                <li>
+                                    <a href="#"><img src="images/facebook.png" alt=""/></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/twitter.png" alt=""/></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/youtube.png" alt=""/></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/red.png" alt=""/></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/googleplus.png" alt=""/></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/instagram.png" alt=""/></a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="overflow-hidden requests-space">
+                            <h3>Solicia el espacio</h3>
+                            <figure>
+                                <img src="images/sample1.jpg" alt="" class="img-responsive"/>
+                            </figure>
+                        </section>
+                        <section class="overflow-hidden requests-space">
+                            <h3>Radio mugido - martadero</h3>
+                            <figure>
+                                <img src="images/sample1.jpg" alt="" class="img-responsive"/>
+                            </figure>
+                        </section>
                     </div>
                 </div>
             </div>
