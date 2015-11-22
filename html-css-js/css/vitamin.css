@@ -464,15 +464,16 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-@media (min-width:768px) and (max-width: 991px) {
-    .margin-top-sm {
-        margin-top: 30px;
-    }
+@media (min-width:992px) and (max-width: 991px) {
+
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
     .margin-top-md {
         margin-top: 60px;
+    }
+    .margin-top-sm {
+        margin-top: 30px;
     }
 }
 
