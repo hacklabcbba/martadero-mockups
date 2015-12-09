@@ -664,6 +664,15 @@
     color: #000;
    }
   }
+  .content {
+   .main-content + .side {
+    > section:first-child {
+     h3{
+      margin-top: 0;
+     }
+    }
+   }
+  }
  }
  main {
 
@@ -1251,6 +1260,45 @@ body.page.dashboard .content {
   i {
    top:3px;
   }
+ }
+}
+
+/*----/----/ $USER PAGE */
+.user-page {
+ .socialnetworks  {
+  li {
+   margin-bottom: 10px;
+   a {
+    color: #000;
+    text-transform: uppercase;
+
+   }
+   img {
+    margin-right: 10px;
+   }
+  }
+ }
+}
+
+/*----/----/ $SEARCH PAGE */
+.search-box {
+ margin-bottom: 10px !important;
+ overflow: hidden;
+ button {
+  border-left: none;
+  font-size: 26px;
+  color: #000;
+  line-height: 1;
+  padding: 0;
+ }
+}
+
+.search-result {
+ a {
+  color: #000;
+ }
+ strong {
+  color: #FF9A00;
  }
 }
 
